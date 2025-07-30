@@ -5,7 +5,7 @@ tags = ["guide", "zmk", "qube", "ergohaven"]
 
 In this guide, we will thoroughly break down the process of fully setting up and flashing an Ergohaven split keyboard using the Qube dongle. You will learn how to prepare the files, perform a full reset, and correctly flash all components for stable operation.
 
-**Ergohaven's Qube** is a special dongle that acts as a central device for your split keyboard, simplifying its connection to your computer and displays useful information.
+**Ergohaven's Qube** - universal device is designed to be an essential companion for wireless keyboards. It works as a dongle and displays useful information.
 
 ![image](/images/qube/qubes.png)
 
