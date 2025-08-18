@@ -21,3 +21,5 @@ languageCode: "ru"
 - [Vial (софт для проводных клавиатур)](docs/vial)
 - [Режим RuEn (для программы Vial)](docs/ruen)
 - [Настройка беспроводной клавиатуры в keymap-editor](docs/keymap-editor)
+- [RuEn раскладка для беспроводных клавиатур](docs/zmk-ruen)
+- [Синхронизация форка ergohaven-zmk-config в GitHub](docs/fork-sync)
