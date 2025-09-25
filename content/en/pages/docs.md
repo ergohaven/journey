@@ -16,6 +16,7 @@ languageCode: "en"
 - [Velvet v3 (wired)](docs/velvet)
 - [Velvet v3 – UI Edition](docs/velvet-ui)
 - [Ergohaven's Qube](docs/qube.md)
+- [Trackball Mini v3](docs/tb-mini-v3.md)
 
 ## Software
 - [Vial software (wired keyboards)](docs/vial)
