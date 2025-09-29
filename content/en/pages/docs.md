@@ -12,7 +12,6 @@ languageCode: "en"
 - [K:03 PRO](docs/k03pro)
 - [M4CR0Pad](docs/macropad)
 - [Planeta](docs/planeta)
-- [Trackball Mini](docs/tb-mini)
 - [Velvet v3 (wired)](docs/velvet)
 - [Velvet v3 – UI Edition](docs/velvet-ui)
 - [Ergohaven's Qube](docs/qube.md)
