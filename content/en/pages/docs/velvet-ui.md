@@ -80,7 +80,7 @@ You can also make a hybrid <a href="https://journey.ergohaven.xyz/en-gb/pages/do
 
 ## Trackball configuration
 
-All trackball modes can be customized in the `config/velvet_v3_ui.keymap` file, this can be done quickly and conveniently in the GitHub interface by clicking **Edit this file**.
+All trackball modes can be customized in the `config/velvet_v3_ui.keymap` file, this can be done quickly and conveniently in the GitHub web-interface by clicking **Edit this file**.
 
 ![image](/images/velvet-ui/github-edit.png)
 
