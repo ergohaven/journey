@@ -16,17 +16,19 @@ toc: false
 - [ ] New switches                                              
 - [ ] New keycaps                                               
 - [ ] Project "Sprawl"                                          
-- [ ] Expo                                                               
+- [x] Expo                                                               
 - [ ] Project "Gamer"                                                     
 - [ ] Imperial44 Spaceship edition                                                             
 - [ ] Planeta v3                                                                               
 - [x] Velvet "UI" edition                                                                      
 - [x] K:03 Wireless edition                                                                    
-- [ ] Imperial44 Wireless edition                                                              
+- [x] Imperial44 Wireless edition                                                              
 - [x] Deskmats                                                                              
 - [x] Noise insulation                                                                      
 - [x] New modules for HPD                                                                     
 - [x] Dongle for wireless keyboards
 - [ ] Spaceship edition for K:03 wireless
+- [ ] OP36 Spaceship edition
+- [ ] Trackball Royale
 
 **Disclaimer:** all information on this page has not been finalized and is for reference only. Changes and additions are made on an ongoing basis.  
