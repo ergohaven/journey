@@ -16,13 +16,13 @@ toc: false
 - [ ] New switches                                              
 - [ ] New keycaps                                               
 - [ ] Project "Sprawl"                                          
-- [ ] Expo                                                               
+- [x] Expo                                                               
 - [ ] Project "Gamer"                                                     
 - [ ] Imperial44 Spaceship edition                                                             
 - [ ] Planeta v3                                                                               
 - [x] Velvet "UI" edition                                                                      
 - [x] K:03 Wireless edition                                                                    
-- [ ] Imperial44 Wireless edition                                                              
+- [x] Imperial44 Wireless edition                                                              
 - [x] Deskmats                                                                              
 - [x] Noise insulation                                                                      
 - [x] New modules for HPD                                                                     
