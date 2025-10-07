@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Guide to Setting Up and Flashing Your Keyboard with Ergohaven&#39;s Qube | Ergohaven&#39;s journey</title>
+<meta property="og:title" content="Guide to Setting Up and Flashing Your Keyboard with Ergohaven&#39;s Qube | Ergohaven&#39;s journey" />
+<meta name="twitter:title" content="Guide to Setting Up and Flashing Your Keyboard with Ergohaven&#39;s Qube | Ergohaven&#39;s journey" />
+<meta itemprop="name" content="Guide to Setting Up and Flashing Your Keyboard with Ergohaven&#39;s Qube | Ergohaven&#39;s journey" />
+<meta name="application-name" content="Guide to Setting Up and Flashing Your Keyboard with Ergohaven&#39;s Qube | Ergohaven&#39;s journey" />
+<meta property="og:site_name" content="Ergohaven&#39;s journey" />
+
+<meta name="description" content="A platform with useful information, made for you 😉">
+<meta itemprop="description" content="A platform with useful information, made for you 😉" />
+<meta property="og:description" content="A platform with useful information, made for you 😉" />
+<meta name="twitter:description" content="A platform with useful information, made for you 😉" />
+
+<meta property="og:locale" content="en" />
+<meta name="language" content="en" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/en-gb/pages/docs_en/qube/" title="English" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.142.0">
+
+    
+    <meta property="og:url" content="http://localhost:1313/en-gb/pages/docs_en/qube/">
+  <meta property="og:site_name" content="Ergohaven&#39;s journey">
+  <meta property="og:title" content="Guide to Setting Up and Flashing Your Keyboard with Ergohaven&#39;s Qube">
+  <meta property="og:description" content="In this guide, we will thoroughly break down the process of fully setting up and flashing an Ergohaven split keyboard using the Qube dongle. You will learn how to prepare the files, perform a full reset, and correctly flash all components for stable operation.
+Ergohaven’s Qube - universal device is designed to be an essential companion for wireless keyboards. It works as a dongle and displays useful information.
+Step 1: Preparing the firmware Before you begin, you need to obtain the latest firmware files. The firmware file is essentially the “brain” of your keyboard, which determines how it works.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="pages">
+    <meta property="article:tag" content="Guide">
+    <meta property="article:tag" content="Zmk">
+    <meta property="article:tag" content="Qube">
+    <meta property="article:tag" content="Ergohaven">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Guide to Setting Up and Flashing Your Keyboard with Ergohaven&#39;s Qube">
+  <meta name="twitter:description" content="In this guide, we will thoroughly break down the process of fully setting up and flashing an Ergohaven split keyboard using the Qube dongle. You will learn how to prepare the files, perform a full reset, and correctly flash all components for stable operation.
+Ergohaven’s Qube - universal device is designed to be an essential companion for wireless keyboards. It works as a dongle and displays useful information.
+Step 1: Preparing the firmware Before you begin, you need to obtain the latest firmware files. The firmware file is essentially the “brain” of your keyboard, which determines how it works.">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/en-gb/pages/docs_en/qube/">
+    <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+</head>
+<body data-theme = "auto" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/en-gb/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/en-gb/posts/">
+                        Blog
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/en-gb/tags/docs/">
+                        Documentation
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/roadmap_en">
+                        Roadmap
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/en-gb/pages/faq/">
+                        FAQ
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="https://ergohaven.xyz/shop">
+                        Shop
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Guide to Setting Up and Flashing Your Keyboard with Ergohaven&#39;s Qube</h1>
+                
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b>Table of Contents</b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#step-1-preparing-the-firmware">Step 1: Preparing the firmware</a></li>
+    <li><a href="#step-2-full-reset">Step 2: Full reset</a></li>
+    <li><a href="#step-3-flashing">Step 3: Flashing</a></li>
+    <li><a href="#step-4-first-power-up-and-synchronization">Step 4: First power-up and synchronization</a></li>
+    <li><a href="#how-to-update-the-layout-in-the-future">How to update the layout in the future?</a></li>
+  </ul>
+</nav>
+    </details>
+            <div class="page-content">
+                <p>In this guide, we will thoroughly break down the process of fully setting up and flashing an Ergohaven split keyboard using the Qube dongle. You will learn how to prepare the files, perform a full reset, and correctly flash all components for stable operation.</p>
+<p><strong>Ergohaven&rsquo;s Qube</strong> - universal device is designed to be an essential companion for wireless keyboards. It works as a dongle and displays useful information.</p>
+<p><img src="/images/qube/qubes.png" alt="image"></p>
+<h2 id="step-1-preparing-the-firmware">Step 1: Preparing the firmware</h2>
+<p>Before you begin, you need to obtain the latest firmware files. The firmware file is essentially the &ldquo;brain&rdquo; of your keyboard, which determines how it works.</p>
+<ol>
+<li>
+<p><strong>If you have a fork (copy) of the repository on GitHub:</strong> Synchronize your fork with the main ZMK repository to get the latest updates. After that, build (compile) the firmware and download the resulting <code>*.uf2</code> files: one for the left and right halves, and one for the Qube dongle.</p>
+</li>
+<li>
+<p><strong>If you don&rsquo;t have your own fork:</strong> Download the ready-made standard firmware from the <a href="https://github.com/ergohaven/keymap_hub" target="_blank">ergohaven/keymap_hub</a> repository. You will also need three <code>.uf2</code> files.</p>
+</li>
+</ol>
+<p>Additionally, you will need a <strong>reset firmware</strong> (<code>settings_reset-ergohaven-zmk.uf2</code>). Usually, it can be found in the same place as the main firmware, or in our <a href="https://github.com/ergohaven/keymap_hub" target="_blank">keymap_hub</a>.</p>
+<p><img src="/images/qube/keymap_hub.png" alt="image"></p>
+<h2 id="step-2-full-reset">Step 2: Full reset</h2>
+<blockquote>
+<p>This step is necessary for a &ldquo;clean&rdquo; installation and to avoid conflicts between the old and new firmware. We will sequentially install the reset firmware on all three devices.</p>
+</blockquote>
+<ol>
+<li><strong>Turn off the power on both halves of the keyboard.</strong> Use the physical switches on the bottom of the case for this.</li>
+</ol>
+<p><img src="/images/qube/buttons.png" alt="image"></p>
+<ol start="2">
+<li><strong>Flash the Reset firmware</strong>. Connect each of the three devices (left half, right half, Qube) to the computer one by one. After connecting, quickly double-press the Reset button on the back of the device to put it into bootloader mode. The device will appear in the system as a removable USB drive. Drag and drop the Reset firmware file (<code>settings_reset-ergohaven-zmk.uf2</code>) onto this drive. After copying, the device will automatically reboot.</li>
+</ol>
+<blockquote>
+<p>It is normal to see a warning about a file transfer error or an improper device ejection after copying the firmware. The file has been transferred successfully, but the drive disconnects before the operating system can register the completion of the transfer.</p>
+</blockquote>
+<h2 id="step-3-flashing">Step 3: Flashing</h2>
+<blockquote>
+<p>Now that all devices are reset, you can install the main firmware. <strong>The order here is important!</strong></p>
+</blockquote>
+<ol>
+<li><strong>Flash Qube.</strong> Connect the dongle to the computer, put it into bootloader mode, and copy the corresponding firmware file (<code>op36_qube-ergohaven-zmk.uf2</code> or similar) to it.</li>
+<li><strong>Disconnect Qube from the computer.</strong></li>
+<li><strong>Flash the left half.</strong> Connect the left half of the keyboard, put it into bootloader mode, and copy the firmware file for the left side (<code>op36_left_qube-ergohaven-zmk.uf2</code>) to it.</li>
+</ol>
+<blockquote>
+<p>To flash the left half, exclusively use the firmware file named <code><b>left_qube</b>-ergohaven-zmk.uf2</code>. The exception is the Velvet UI, which uses <code><b>ui_left</b>-ergohaven-zmk.uf2</code> for the left half and <code><b>ui_right_qube</b>-ergohaven-zmk.uf2</code> for the right half.</p>
+</blockquote>
+<ol start="4">
+<li><strong>Disconnect the left half from the computer.</strong></li>
+<li><strong>Flash the right half.</strong> Connect the right half, put it into bootloader mode, and copy its firmware file (<code>op36_right-ergohaven-zmk.uf2</code>) to it.</li>
+</ol>
+<h2 id="step-4-first-power-up-and-synchronization">Step 4: First power-up and synchronization</h2>
+<p>All components are flashed. Now they have to be started correctly.</p>
+<ol>
+<li><strong>Using a Type-C cable, connect Ergohaven&rsquo;s Qube to the PC.</strong> It will act as a receiver.</li>
+<li><strong>Turn on the power on the left half of the keyboard.</strong> It should automatically connect to Qube.</li>
+<li><strong>Turn on the power on the right half.</strong> It will connect to the Qube, completing the setup.</li>
+</ol>
+<p>Wait a few seconds. Try typing something. If everything is done correctly, your keyboard is ready to use!</p>
+<blockquote>
+<p>If nothing happens, press the reset button on Qube once.</p>
+</blockquote>
+<p><img src="/images/qube/op36_qube.png" alt="image"></p>
+<h2 id="how-to-update-the-layout-in-the-future">How to update the layout in the future?</h2>
+<blockquote>
+<p>This is one of the main advantages of using Ergohaven&rsquo;s Qube. All the keyboard layout logic is stored in it.</p>
+</blockquote>
+<p>If you have changed your layout (swapped keys, added a macro) and built a new firmware, you <strong>do not need</strong> to re-flash the halves of the keyboard.
+It is enough to re-flash only the dongle! Just connect it to the computer, put it into bootloader mode, and copy the new firmware file to it. This makes the update process quick and convenient.</p>
+<p><strong>Congratulations! Your keyboard is ready to use.</strong></p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://t.me/ergohavenxyz" target="_blank" rel="noopener noreferrer me"
+    title="Telegram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.968.193 1.798.919 2.286 1.61.516 3.275 1.009 4.654 1.472.509 1.793.997 3.592 1.48 5.388.16.36.506.494.864.498l-.002.018s.281.028.555-.038a2.1 2.1 0 0 0 .933-.517c.345-.324 1.28-1.244 1.811-1.764l3.999 2.952.032.018s.442.311 1.09.355c.324.022.75-.04 1.116-.308.37-.27.613-.702.728-1.196.342-1.492 2.61-12.285 2.997-14.072l-.01.042c.27-1.006.17-1.928-.455-2.474a1.654 1.654 0 0 0-1.034-.407z" />
+</svg>
+</a>
+<a href="https://github.com/ergohaven" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://youtube.com/@ergohaven" target="_blank" rel="noopener noreferrer me"
+    title="Youtube">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+    </path>
+    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+</svg>
+</a>
+<a href="https://instagram.com/ergohaven" target="_blank" rel="noopener noreferrer me"
+    title="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+</svg>
+</a>
+<a href="/index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2025 .
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

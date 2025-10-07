@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">First steps with a Keyboard on ZMK | Ergohaven&#39;s journey</title>
+<meta property="og:title" content="First steps with a Keyboard on ZMK | Ergohaven&#39;s journey" />
+<meta name="twitter:title" content="First steps with a Keyboard on ZMK | Ergohaven&#39;s journey" />
+<meta itemprop="name" content="First steps with a Keyboard on ZMK | Ergohaven&#39;s journey" />
+<meta name="application-name" content="First steps with a Keyboard on ZMK | Ergohaven&#39;s journey" />
+<meta property="og:site_name" content="Ergohaven&#39;s journey" />
+
+<meta name="description" content="A platform with useful information, made for you 😉">
+<meta itemprop="description" content="A platform with useful information, made for you 😉" />
+<meta property="og:description" content="A platform with useful information, made for you 😉" />
+<meta name="twitter:description" content="A platform with useful information, made for you 😉" />
+
+<meta property="og:locale" content="en" />
+<meta name="language" content="en" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/en-gb/pages/docs_en/zmk-keyboards/" title="English" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.142.0">
+
+    
+    <meta property="og:url" content="http://localhost:1313/en-gb/pages/docs_en/zmk-keyboards/">
+  <meta property="og:site_name" content="Ergohaven&#39;s journey">
+  <meta property="og:title" content="First steps with a Keyboard on ZMK">
+  <meta property="og:description" content="This article provides a guide to help you take your first steps in mastering a keyboard on ZMK. After reading the article, the user will learn how to: manage the keyboard’s power, connect the keyboard to multiple devices, and update the firmware.
+Connecting the keyboard If you have encountered any issues with connecting keyboard to your device, try to reboot bluetooth on your device and repeat all steps.
+Step 1. First, turn it on by switching the physical toggle to the “On” position.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="pages">
+    <meta property="article:tag" content="Guide">
+    <meta property="article:tag" content="Zmk">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="First steps with a Keyboard on ZMK">
+  <meta name="twitter:description" content="This article provides a guide to help you take your first steps in mastering a keyboard on ZMK. After reading the article, the user will learn how to: manage the keyboard’s power, connect the keyboard to multiple devices, and update the firmware.
+Connecting the keyboard If you have encountered any issues with connecting keyboard to your device, try to reboot bluetooth on your device and repeat all steps.
+Step 1. First, turn it on by switching the physical toggle to the “On” position.">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/en-gb/pages/docs_en/zmk-keyboards/">
+    <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+</head>
+<body data-theme = "auto" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/en-gb/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/en-gb/posts/">
+                        Blog
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/en-gb/tags/docs/">
+                        Documentation
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/roadmap_en">
+                        Roadmap
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/en-gb/pages/faq/">
+                        FAQ
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="https://ergohaven.xyz/shop">
+                        Shop
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">First steps with a Keyboard on ZMK</h1>
+                
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b>Table of Contents</b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#connecting-the-keyboard">Connecting the keyboard</a></li>
+    <li><a href="#connecting-to-multiple-devices">Connecting to multiple devices</a></li>
+    <li><a href="#battery-status">Battery status</a></li>
+    <li><a href="#turning-off-the-keyboard">Turning off the keyboard</a></li>
+    <li><a href="#entering-sleep-state">Entering sleep state</a></li>
+    <li><a href="#wired-connection">Wired connection</a></li>
+    <li><a href="#keyboard-firmware">Keyboard firmware</a></li>
+  </ul>
+</nav>
+    </details>
+            <div class="page-content">
+                <p>This article provides a guide to help you take your first steps in mastering a keyboard on ZMK. After reading the article, the user will learn how to: manage the keyboard&rsquo;s power, connect the keyboard to multiple devices, and update the firmware.</p>
+<h2 id="connecting-the-keyboard">Connecting the keyboard</h2>
+<blockquote>
+<p>If you have encountered any issues with connecting keyboard to your device, try to reboot bluetooth on your device and repeat all steps.</p>
+</blockquote>
+<p>Step 1. First, turn it on by switching the physical toggle to the &ldquo;On&rdquo; position.</p>
+<p><img src="/images/zmk-keyboards/buttons.png" alt="image"></p>
+<p>Step 2. Next, the halves need to be connected to each other. To do this, simultaneously press the &ldquo;Reset&rdquo; button on the bottom of both halves.</p>
+<p>Step 3. Once the keyboard is turned on and the halves are connected, you can proceed to connect it to device. First, make sure that the current connection profile is cleared by pressing <code>&amp;BT_CLR</code> (in the default layout, the profile control keys are located on layer 3; you can switch to it by holding down the layer 1 and 2 switch keys). This will reset the devices bound to the profile.</p>
+<p><img src="/images/zmk-keyboards/sel_clr-en.png" alt="image"></p>
+<p>Step 4. Next, to connect to a device via Bluetooth, you need to press the profile selection key, for example, <code>&amp;BT_SEL 0</code>.</p>
+<p>Step 5. After pressing, the keyboard will enter pairing mode and appear in the list of available devices for connection. Select it, and voila, everything works!</p>
+<p><img src="/images/zmk-keyboards/connect.png" alt="image"></p>
+<blockquote>
+<p><strong>P.S.</strong> If the keyboard is not working correctly, for example, key presses from one half do not reach the device, you should repeat the procedure of connecting the halves by simultaneously pressing the <code>Reset</code> key on both.</p>
+</blockquote>
+<h2 id="connecting-to-multiple-devices">Connecting to multiple devices</h2>
+<p>For wireless connection, the keyboard can remember up to 5 devices. Each connected device is bound to the selected &ldquo;profile&rdquo; after connection.</p>
+<p>To connect to the second device, press the <code>&amp;BT_SEL 1</code> key, the keyboard will become available for pairing, connect to it from the device.</p>
+<p>To reconnect to the first device, press <code>&amp;BT_SEL 0</code>, the device will automatically see the keyboard and connect to it. Similarly, you can connect devices to profiles 3, 4, 5.</p>
+<blockquote>
+<p>To unbind the keyboard from your device on the current profile, follow these steps:</p>
+</blockquote>
+<ol>
+<li>clear the profile on the keyboard by pressing <code>&amp;BT_CLR</code>,</li>
+<li>then unbind the keyboard in the Bluetooth settings on your device,</li>
+<li>and restart Bluetooth on your device.
+After performing these steps, the keyboard should be completely unhooked from your device on the current profile.</li>
+</ol>
+<p><img src="/images/zmk-keyboards/sel-en.png" alt="image"></p>
+<h2 id="battery-status">Battery status</h2>
+<p>The current charge of the master (left by default) half is displayed in the OS, in the list of connected Bluetooth devices. Under normal conditions the charge of the secondary half is spent slower than the master half, the exact charge can be seen only with the help of additional software. There are several variants of software for different OS:</p>
+<ul>
+<li><a href="https://github.com/kot149/zmk-battery-center">ZMK Battery Center</a> - available on Windows, MacOS;</li>
+<li><a href="https://github.com/codyd51/Mighty-Mitts">Mighty-Mitts</a> - available on MacOS;</li>
+<li><a href="https://github.com/Maksim-Isakau/zmk-split-battery">ZMK Split Battery</a> - available on Windows;</li>
+<li><a href="https://github.com/mh4x0f/zmkBATx">zmkBATx</a> - available on Linux.</li>
+</ul>
+<p><img src="/images/zmk-keyboards/power_level.png" alt="image"></p>
+<h2 id="turning-off-the-keyboard">Turning off the keyboard</h2>
+<p>You can turn off the keyboard with the <a href="/en-gb/pages/docs_en/zmk-keyboards/#connecting-the-keyboard">switch on the back of the keyboard</a> by switching it to the &ldquo;Off&rdquo; position, and you can also configure the shutdown directly on the keyboard key by assigning <code>&amp;SOFT_OFF</code> to it. When this key is pressed, both halves of the keyboard will be switched to the &ldquo;Soft off&rdquo; state. To wake it up, you need to press the <code>Reset</code> button on the bottom of the keyboard.</p>
+<h2 id="entering-sleep-state">Entering sleep state</h2>
+<p>After 10 minutes of inactivity, the keyboard enters sleep mode to save power. To wake it up from sleep, simply press any key, and the keyboard will wake up in a couple of seconds.</p>
+<h2 id="wired-connection">Wired connection</h2>
+<p>When the keyboard is connected to a device with a USB cable, the keyboard automatically starts transmitting data via the USB cable. After disconnecting the USB cable, the keyboard will return to Bluetooth data transmission mode.</p>
+<p>In situations where the keyboard is being charged from one device, but it is necessary to transmit data to another, you can press the <code>&amp;OUT_BLE</code> key. This will forcibly switch the keyboard to Bluetooth transmission mode, and data will be sent to the device bound to the current profile.</p>
+<p><img src="/images/zmk-keyboards/cables.jpg" alt="image"></p>
+<h2 id="keyboard-firmware">Keyboard firmware</h2>
+<p>Updating the keyboard firmware is done as follows:</p>
+<ol>
+<li>Connect half of the keyboard with a USB cable;</li>
+<li>Double-click the <code>Reset</code> key on the bottom of the keyboard (the pause between clicks should be minimal);</li>
+<li>Similar to flashing keyboards on QMK, a new removable disk is detected in the PC, and the firmware file must be placed in it;</li>
+<li>Unplug a USB cable;</li>
+<li>Reconnect halves by simultaneously pressing the &ldquo;Reset&rdquo; button on the bottom of both halves.</li>
+</ol>
+<p><strong>Important!</strong> The firmware of the halves have differences, and the left half must be flashed with a file whose name ends in <code>left.uf2</code>, and the right half with a file ending in <code>right.uf2</code>. In most cases you can just flash only the master halve (right one for Velvet v3 UI edition, and left for OP36 and Velvet v3) as it stores the keymap.</p>
+<blockquote>
+<p>You can switch the keyboard to firmware mode not only by double-clicking <code>Reset</code>, but also by pressing the <code>&amp;bootloader</code> key. Pressing <code>&amp;bootloader</code> switches only the half on which it was pressed to firmware mode.</p>
+</blockquote>
+<p>More information in the ZMK documentation: <a href="https://zmk.dev/docs">https://zmk.dev/docs</a></p>
+<p><img src="/images/zmk-keyboards/velvet.jpg" alt="image"></p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://t.me/ergohavenxyz" target="_blank" rel="noopener noreferrer me"
+    title="Telegram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.968.193 1.798.919 2.286 1.61.516 3.275 1.009 4.654 1.472.509 1.793.997 3.592 1.48 5.388.16.36.506.494.864.498l-.002.018s.281.028.555-.038a2.1 2.1 0 0 0 .933-.517c.345-.324 1.28-1.244 1.811-1.764l3.999 2.952.032.018s.442.311 1.09.355c.324.022.75-.04 1.116-.308.37-.27.613-.702.728-1.196.342-1.492 2.61-12.285 2.997-14.072l-.01.042c.27-1.006.17-1.928-.455-2.474a1.654 1.654 0 0 0-1.034-.407z" />
+</svg>
+</a>
+<a href="https://github.com/ergohaven" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://youtube.com/@ergohaven" target="_blank" rel="noopener noreferrer me"
+    title="Youtube">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+    </path>
+    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+</svg>
+</a>
+<a href="https://instagram.com/ergohaven" target="_blank" rel="noopener noreferrer me"
+    title="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+</svg>
+</a>
+<a href="/index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2025 .
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

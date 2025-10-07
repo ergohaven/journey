@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qube on Ergohaven&#39;s journey</title>
+    <link>http://localhost:1313/en-gb/tags/qube/</link>
+    <description>Recent content in Qube on Ergohaven&#39;s journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost:1313/en-gb/tags/qube/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guide to Setting Up and Flashing Your Keyboard with Ergohaven&#39;s Qube</title>
+      <link>http://localhost:1313/en-gb/pages/docs/qube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en-gb/pages/docs/qube/</guid>
+      
+      <description>&lt;p&gt;In this guide, we will thoroughly break down the process of fully setting up and flashing an Ergohaven split keyboard using the Qube dongle. You will learn how to prepare the files, perform a full reset, and correctly flash all components for stable operation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ergohaven&amp;rsquo;s Qube&lt;/strong&gt; - universal device is designed to be an essential companion for wireless keyboards. It works as a dongle and displays useful information.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/qube/qubes.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;step-1-preparing-the-firmware&#34;&gt;Step 1: Preparing the firmware&lt;/h2&gt;
+&lt;p&gt;Before you begin, you need to obtain the latest firmware files. The firmware file is essentially the &amp;ldquo;brain&amp;rdquo; of your keyboard, which determines how it works.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

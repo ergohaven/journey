@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trackball on Ergohaven&#39;s journey</title>
+    <link>http://localhost:1313/en-gb/tags/trackball/</link>
+    <description>Recent content in Trackball on Ergohaven&#39;s journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://localhost:1313/en-gb/tags/trackball/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trackball Mini</title>
+      <link>http://localhost:1313/en-gb/pages/docs/tb-mini/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en-gb/pages/docs/tb-mini/</guid>
+      
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keyboards/tb-mini01.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;connection&#34;&gt;Connection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;When connecting trackball to the computer, make sure the USB-C cable is firmly inserted into the connector&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;customizing-device&#34;&gt;Customizing device&lt;/h2&gt;
+&lt;p&gt;Please refer to the &lt;a href=&#34;http://localhost:1313/en-gb/pages/docs/vial/&#34;&gt;Vial guide&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;firmware-update&#34;&gt;Firmware update&lt;/h2&gt;
+&lt;h3 id=&#34;preparation&#34;&gt;Preparation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Download the latest firmware &lt;a href=&#34;https://github.com/ergohaven/keymap_hub&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Save your layout in the Vial program by clicking on the &amp;ldquo;File&amp;rdquo; menu, then &amp;ldquo;Save current layout&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keyboards/tb-mini02.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Connect Trackball Mini to PC&lt;/li&gt;
+&lt;li&gt;Press the right button on the back of the case twice quickly (red button in the photo)&lt;/li&gt;
+&lt;li&gt;Wait until the controller enters bootloader mode and the storage folder opens&lt;/li&gt;
+&lt;li&gt;Copy or drag the Uf2 file, after which the controller should instantly reboot and start working as normal&lt;/li&gt;
+&lt;li&gt;Import the layout into the Vial program by clicking on the &amp;ldquo;File&amp;rdquo; menu, then &amp;ldquo;Load saved layout&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Слой для запуска приложений | Ergohaven&#39;s journey</title>
+<meta property="og:title" content="Слой для запуска приложений | Ergohaven&#39;s journey" />
+<meta name="twitter:title" content="Слой для запуска приложений | Ergohaven&#39;s journey" />
+<meta itemprop="name" content="Слой для запуска приложений | Ergohaven&#39;s journey" />
+<meta name="application-name" content="Слой для запуска приложений | Ergohaven&#39;s journey" />
+<meta property="og:site_name" content="Ergohaven&#39;s journey" />
+
+<meta name="description" content="как открыть любую программу одним нажатием клавиши">
+<meta itemprop="description" content="как открыть любую программу одним нажатием клавиши" />
+<meta property="og:description" content="как открыть любую программу одним нажатием клавиши" />
+<meta name="twitter:description" content="как открыть любую программу одним нажатием клавиши" />
+
+<meta property="og:locale" content="en" />
+<meta name="language" content="en" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/en-gb/posts_/layer_for_apps/" title="English" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.126.2">
+
+    
+    <meta property="og:url" content="http://localhost:1313/en-gb/posts_/layer_for_apps/">
+  <meta property="og:site_name" content="Ergohaven&#39;s journey">
+  <meta property="og:title" content="Слой для запуска приложений">
+  <meta property="og:description" content="как открыть любую программу одним нажатием клавиши">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts_">
+    <meta property="article:published_time" content="2024-07-08T10:58:08-04:00">
+    <meta property="article:modified_time" content="2024-07-08T10:58:08-04:00">
+    <meta property="article:tag" content="Vial">
+    <meta property="og:image" content="http://localhost:1313/images/layer_for_apps/1.png">
+
+
+    
+    
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/layer_for_apps/1.png">
+  <meta name="twitter:title" content="Слой для запуска приложений">
+  <meta name="twitter:description" content="как открыть любую программу одним нажатием клавиши">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/en-gb/posts_/layer_for_apps/">
+    <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+</head>
+<body data-theme = "auto" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/en-gb/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/en-gb/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/en-gb/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/docs/">
+                        Documentation
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Слой для запуска приложений</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2024-07-08T10:58:08-04:00" itemprop="datePublished"> 8 Jul 2024 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <h2 id="введение">Введение</h2>
+<p>Долго пользовался рабочими столами в винде, очень зашли они, на одном столе открыл рабочий чат, на втором браузер, на третьем IDE и т.д., балдежно быстро переключаешься, не убирая руки с клавиатуры.</p>
+<p>В какой-то момент у меня было активно 6 рабочих столов, и чтобы переключиться с 6 на 1 надо жмать хоткей 6 раз&hellip; а потом обратно еще 6.. Возникла мысль, может есть какой-то хоткей, чтобы переключиться именно на 6 стол? Но, к сожалению в самой винде такого нет, что странно.</p>
+<p><img alt="image" src="/images/layer_for_apps/1.png"><br>
+<em>Те самые 6 рабочих столов (ノಠ益ಠ)ノ彡┻━┻</em></p>
+<h2 id="слишком-длинное-лень-читать">Слишком длинное; лень читать</h2>
+<ul>
+<li>Раздел с краткой выжимкой статьи, для более подробного переходите к следующему разделу.</li>
+<li>Закрепленные на панели задач программы можно открывать нажатием сочетаний GUI + 1-9, если уже запущено, то программа развернется, круто, но есть ограничение по количеству.</li>
+<li>Если надо запускать больше программ, то отличным решением будет написать скрипты на AutoHotKey. С помощью AHK можно назначить много различных действий на определенные сочетания клавиш. Примеры скрипта можно найти в разделе AutoHotKey этой статьи.</li>
+</ul>
+<h2 id="начало-длинного-пути">Начало длинного пути</h2>
+<p>Нашел опенсорсную альтернативу рабочих столов, оконный менеджер komorebi, поковырялся с приложухой несколько дней и не зашло. В ней вроде есть все то, что мне нужно, можно настроить несколько столов, есть хоткеи для переключения на каждый и много всяких других интересностей присущих оконным менеджерам.</p>
+<p><img alt="image" src="/images/layer_for_apps/2.png"><br>
+<em>Вот такую вот красоту позволяет наводить komorebi</em></p>
+<p>Не зашло т.к. показалось неудобным конфигурирование столов, там мы заполняем json файл, в котором пишем какая приложуха на каком столе стартует, и это не работает, если, например, мне надо 2 отдельных профиля одного браузера открывать на разных столах, ведь .exe файл у них один, стартуют только с аргументами разными, а такого тюнинга в komorebi не оказалось, к сожалению. Да и мне надо всего 6 хоткеев, а оконный менеджер предоставляет тонну функционала, который мне особо и не нужен.</p>
+<h2 id="какие-есть-варианты-решения-проблемы">Какие есть варианты решения проблемы?</h2>
+<p>Как-то раз залипая на ютубе наткнулся на видос с одной интересной раскладкой от Ben Vallack. Особенно мне понравилось услышанное про сочетания с кнопкой MEH(Ctrl + Shift + Alt). Он сидит на макоси, там насколько понял есть программка Keyboard Maestro, в ней можно назначить хоткеи для открытия любого приложения, и не только.</p>
+<p><img alt="image" src="/images/layer_for_apps/3.png"><br>
+<em>В Keyboard Maestro есть тонна различного рода конфигурирования для сочетаний клавиш</em></p>
+<p>Если так подумать, то не сильно то мне и нужны собственно рабочие столы, такой вариант мне бы тоже отлично подошел, т.к. по сути то я просто держу на 6 разных столах 6 приложений развернутых на весь экран.</p>
+<p>Покупать мак для решения такой проблемы было бы немного перебором, да и в винде для меня особых проблем как будто нет, полез гуглить какие есть варианты реализации подобного функционала в винде.</p>
+<p>Нагуглились следующие варианты:</p>
+<ol>
+<li>Самый простой и не требующий никаких танцев с бубнами, как оказалось уже встроен в винду, можно закрепить программу на панели задач внизу и вызывать эти программы сочетаниями Win + 1-0(порядковый номер программы на панели задач);</li>
+</ol>
+<p><img alt="image" src="/images/layer_for_apps/4.png"><br>
+<em>Спящий котик(и программы, закрепленные у меня на панели задач)</em></p>
+<ol start="2">
+<li>Еще можно забацать скрипты с помощью программки AutoHotkey (далее AHK), в целом вариант неплохой, в скриптах можно сделать и разного рода логику вроде того, что если приложение открыто, не запускаем его второй раз, а просто фокусируемся. Способ подразумевает погружение в язык скриптов AHK, вариант неплохой, но решил погуглить еще;</li>
+</ol>
+<p><img alt="image" src="/images/layer_for_apps/12.png"><br>
+<em>Пример скрипта на AHK</em></p>
+<ol start="3">
+<li>В PowerToys есть модуль &ldquo;Диспетчер клавиатуры&rdquo;, он как раз делает то что требуется, по сочетанию можно открывать приложение, открывать его с какими-то аргументами и прочие интересности, то что как раз мне требовалось, да и пара других модулей PowerToys у меня уже используется.</li>
+</ol>
+<p><img alt="image" src="/images/layer_for_apps/5.png"><br>
+<em>Окно диспетчера клавиатуры PowerToys</em></p>
+<h2 id="что-по-клавиатуре">Что по клавиатуре?</h2>
+<p>В Vial под это дело решил сделать отдельный слой, на который переключаюсь через OSL, он мне тут показался удобнее всего по нескольким причинам:</p>
+<pre><code>удобно что не надо зажимать, просто тапнул и уже на слое;
+в отличие от TG, OSL активирует слой только на одно нажатие и далее автоматически возвращает тебя на прошлый слой, самое то для моего сценария использования, т.к. случая когда мне надо два раза подряд переключаться между приложениями представить не могу.
+</code></pre>
+<p>Кнопку для активации слоя с приложениями расположил под большим пальцем, ибо переключаюсь между приложениями очень часто.</p>
+<p><img alt="image" src="/images/layer_for_apps/6.png"><br>
+<em>Долго не мог найти толкового применения для OSL, а тут он вписывается идеально</em></p>
+<p>На сам слой назначил функции LGUI(1) - LGUI(0), чтобы было проще запомнить где какие приложения раскидал хоткеи по клавиатуре таким образом, чтобы создавалась определенная ассоциация в голове - на месте буквы Т - хоткей открытия телеги, на месте буквы W - хоткей открытия рабочего браузера, на месте буквы S - обсидиан, в котором веду заметки(назначил на S, а не на O ибо хотел все расположить под левой рукой, удобно чтоб не убирать правую руку с мышки\трекбола, если когда-нибудь в мои руки попадет HPD с трекболом, и мышка уже будет не так нужна, то вероятно буду использовать и правую половину под приложения).</p>
+<p><img alt="image" src="/images/layer_for_apps/7.png"></p>
+<h2 id="опробуем-найденные-варианты">Опробуем найденные варианты</h2>
+<p>Начинать решил с того, что потестить проще всего - закрепление на панели задач. Первые впечатления - балдеж, это прям то что и хотел получить в итоге. Из-за того, что расположил кнопки ассоциативно, привык довольно быстро, движений мышкой совершаю намного меньше, ну и проблема, которая возникала с переключением от 1 рабочего стола к 6 больше не появляется.</p>
+<p>Подход настолько понравился, что сочетаний клавиш винды от 1 до 0 не хватило, забиндил все самые используемые приложения и чуток нехватило.. Эх</p>
+<p>Пошел пробовать второй по доступности для меня вариант - уже установленные PowerToys, диспетчере клавиатуры попробовал переназначить сочетания клавиш.</p>
+<p><img alt="image" src="/images/layer_for_apps/8.png"></p>
+<p>Есть много кастомизации для сочетаний, в моем случае назначил сочетание CTRL + ALT + SHIFT(тот самый MEH из qmk и vial) + A, выбрал Действие &ldquo;Запуск программы&rdquo; и выбрал экзешник нужного мне приложения, виала.</p>
+<p>С таким подходом все работало отлично, но не со всеми программами, стим например почему-то не заработал, пока не выбрал для него параметр &ldquo;Если выполняется&rdquo; = &ldquo;Запустить другой&rdquo;. Это видимо особенности конкретных приложений, но стоит их учитывать, и кстати такие штуки не появлялись при запуске приложений с панели задач, так что возможно стоит подобные стиму приложения запускать как раз с таск бара.</p>
+<p><img alt="image" src="/images/layer_for_apps/9.png"><br>
+<em>Так выглядит слой с наворотами из PowerToys</em></p>
+<p>На данном этапе идея уже реализована и функционирует так, как хотел, но решил опробовать и 3 способ, скрипты с AHK.</p>
+<p>AutoHotKey</p>
+<p>Тут потребовалось больше предварительных действий, чем в прошлых двух способах, установил с оф сайта программу AutoHotKey Dash, с помощью можно скомпилировать скрипт .ahk в запускаемый файл.</p>
+<p><img alt="image" src="/images/layer_for_apps/10.png"><br>
+<em>Окошко программы</em></p>
+<p>Скрипты на AHK похоже существуют уже очень долго, по ним много документации и инфы на форумах, недолго поискав, наткнулся на несколько примеров как можно реализовать открытие приложения по сочетанию клавиш.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">{   
+</span></span><span class="line"><span class="cl">    if PID := ProcessExist(&#34;Code.exe&#34;)
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        WinActivate &#34;ahk_pid &#34; PID
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    else
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        Run &#34;C:\Users\ivans\AppData\Local\Programs\Microsoft VS Code\Code.exe&#34;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    return
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><p>Вкратце чего тут понаписано:</p>
+<p>Строка 8: если вкратце, строка обозначает, что мы делаем сочетание клавиш Ctrl + Alt + Shift + E. &ldquo;!+^&rdquo; - это такое обозначение, что кнопка должна быть с нажата с модификаторами Ctrl + Alt + Shift. &ldquo;SC12&rdquo; - это скан кода клавиши E(почему не работает если просто написать букву вместо скан кода не разобрался..).</p>
+<p>Строка 10: тут мы запрашиваем функцией ProcessExist запущена ли нужная программа, в данном примере Code.exe, если запущена, то мы сохраняем идентификатор процесса в переменную PID, и заходим на строку 12.</p>
+<p>Строка 12: так как мы проверили что программа запущена, нам просто надо переключиться на окно этой программы. Мы вызываем функцию WinActivate, и передаем в нее идентификатор найденного процесса, сохраненный в переменную PID.</p>
+<p>Если же на строке 10 оказалось, что программа Code.exe не запущена, то мы попадаем в блок else, на строку 16.</p>
+<p>Строка 16: мы выяснили, что программа не запущена, нам надо ее запустить. Функцией Run запускаем программу, в кавычках передаем в нее путь к файлу.</p>
+<p>Далее компилируем скрипт, запускаем получившийся .exe файл, и, вуаля, при нажатии на сочетание клавиш все магическим образом открывается!</p>
+<p>На самом деле с AHK все оказалось гораздо проще, чем изначально предполагал, документации прям действительно много, как и различного рода ответов на форумах. Практически на любой запрос можно найти готовый скрипт.</p>
+<p>В большинстве случаев реализованный функционал не сильно отличается от того, что позволяет сделать PowerToys, однако, существую различные нестандартные случаи, когда PowerToys уже не справляется, например если мы запускаем sample1.exe файл, а он под капотом запускает sample2.exe файл, и уже именно он висит в открытых процессах. В таком случае AHK позволяет сделать кастомную логику: если не открыт sample2.exe, то запусти sample1.exe. Или, например, есть возможность искать запущенные приложения не по названию файла, а по названию окна, это пригодилось чтобы назначить на сочетание клавиш открытие браузерного приложения YouTube.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">{   
+</span></span><span class="line"><span class="cl">    if WinExist(&#34;YouTube -.*YouTube&#34;)
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        WinActivate
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    else
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        Run &#34;C:\Program Files\BraveSoftware\Brave-Browser\Application\chrome_proxy.exe  --args&#34;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    return
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><p>Штука классная, позволяет развить идею запуска приложений по сочетанию до максимума. В дальнейшем буду однозначно продолжать ее использовать.
+Итоги</p>
+<p>На мой взгляд получилось 10 из 10, количество движений, выполняемых мышкой сократилось очень сильно, и переключаюсь между приложениями в мгновение. Теперь действительно готов к HPD с трекболлом, до этого были сомнения т.к. много работаю курсором, но с реализованным слоем для приложений к мышке почти не тянусь. Теперь осталось дождаться собственно самого обновленного HPD.</p>
+<p>Еще как вариант можно рассмотреть реализацию такого слоя на макропаде, например, если на основной клавиатуре уже слишком много слоев, некуда впихнуть.</p>
+<p>Также стоит отметить, есть буквально одна ситуация, в которой пока не нашел решение через AHK - как открывать два разных профиля одного браузера двумя разными сочетаниями клавиш. У них и процесс крутится как будто один и тот же, и в названии окна нет названия профиля.. Тут буду продолжать использовать открытие через панель задач. А от использования PowerToys скорее всего откажусь в итоге, ибо AHK позволяет сделать те же веще, но с более тонкой настройкой.</p>
+<h2 id="ps">P.S.</h2>
+<p>Если будете пробовать делать скрипты на AHK, настоятельно советую читать документацию, в ней часто можно найти полезные примеры. Мне в ней сложновато было ориентироваться, находить конкретные нужные функции, помогло то, что за метил разделы в левой части экрана. Наиболее полезными для задачи запуска приложений мне показались разделы Process и Window, в них есть функции для поиска запущенной программы по любым параметрам.</p>
+<p><img alt="image" src="/images/layer_for_apps/11.png"><br>
+<em><a href="https://www.autohotkey.com/docs/v2/lib/ProcessExist.htm">https://www.autohotkey.com/docs/v2/lib/ProcessExist.htm</a></em></p>
+<p>Над статьёй работал <a href="https://t.me/+E-mlq11c97AyZmY6">Иван Селезнёв</a><br>
+Обсуждение статьи в нашей <a href="https://t.me/+E-mlq11c97AyZmY6">телеграм-группе</a></p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/hugo-sid" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="/index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2025 .
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

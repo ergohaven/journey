@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guides on Ergohaven&#39;s journey</title>
+    <link>http://localhost:1313/tags/guides/</link>
+    <description>Recent content in Guides on Ergohaven&#39;s journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Mon, 30 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/guides/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Как научиться печатать вслепую</title>
+      <link>http://localhost:1313/posts/touchtyping/</link>
+      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/touchtyping/</guid>
+      
+      <description>Предисловие Ни для кого не секрет, что в нашем магазине продаются кейкапы без символов, некоторые покупатели приходят в ступор и решают взять привычные кейкапы с символами. В данной статье мы расскажем, что такое touch typing (или слепая печать по-русски), а также почему стоит перейти на кейкапы без символов.
+Что такое слепая печать? Описание из википедии: Слепой метод печати — это метод набора текста, позволяющий печатать, не глядя на клавиши пишущей машинки или клавиатуры, используя все пальцы или их большую часть.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

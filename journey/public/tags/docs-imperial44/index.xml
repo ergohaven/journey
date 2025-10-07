@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs, Imperial44 on Ergohaven&#39;s journey</title>
+    <link>http://localhost:1313/tags/docs-imperial44/</link>
+    <description>Recent content in Docs, Imperial44 on Ergohaven&#39;s journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language><atom:link href="http://localhost:1313/tags/docs-imperial44/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Imperial44</title>
+      <link>http://localhost:1313/pages/docs/imperial44/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/docs/imperial44/</guid>
+      
+      <description>Правила подключения Imperial44 При подключении клавиатуры к компьютеру, убедитесь, что кабель USB-C плотно вставлен в разъем
+Настройка Imperial44 Пожалуйста перейдите в статью о программе Vial
+Функция Caps Word Одновременное нажатие клавиш LShift и RShift активирует Caps Word. Эта функция позволяет набирать слова заглавными буквами, не используя клавишу Caps Lock. Caps Word автоматически отключается в конце слова
+Переключение Win/Mac режимов Для переключения необходимо нажать клавишу Замена Ctrl-Cmd для MacOS на третьем слое</description>
+      
+    </item>
+    
+  </channel>
+</rss>

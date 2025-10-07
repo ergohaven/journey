@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ergohaven on Ergohaven&#39;s journey</title>
+    <link>http://localhost:1313/tags/ergohaven/</link>
+    <description>Recent content in Ergohaven on Ergohaven&#39;s journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language><atom:link href="http://localhost:1313/tags/ergohaven/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Руководство по настройке и прошивке клавиатуры с Ergohaven&#39;s Qube</title>
+      <link>http://localhost:1313/pages/docs/qube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/docs/qube/</guid>
+      
+      <description>&lt;p&gt;В этом руководстве мы подробно разберем процесс полной настройки и прошивки сплит-клавиатуры Ergohaven с использованием донгла Qube. Вы узнаете, как подготовить файлы, выполнить полный сброс и правильно прошить все компоненты для стабильной работы.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ergohaven&amp;rsquo;s Qube&lt;/strong&gt; — это универсальный девайс создан для того, чтобы стать незаменимым помощником для беспроводных клавиатур. Работает как донгл, отображает полезную информацию, а также снижает энергопотребление вашей клавиатуры&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/qube/qubes.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;шаг-1-подготовка-прошивки&#34;&gt;Шаг 1: Подготовка прошивки&lt;/h2&gt;
+&lt;p&gt;Прежде чем начать, вам нужно получить актуальные файлы прошивки. Файл прошивки — это, по сути, «мозг» вашей клавиатуры, который определяет, как она работает.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>K:03 on Ergohaven&#39;s journey</title>
+    <link>http://localhost:1313/en-gb/tags/k03/</link>
+    <description>Recent content in K:03 on Ergohaven&#39;s journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en-gb/tags/k03/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>K:03 Spaceship Edition: Welcome aboard</title>
+      <link>http://localhost:1313/en-gb/posts/k03spaceship/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en-gb/posts/k03spaceship/</guid>
+      
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/k03spaceship/1.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A couple of months ago, my enormously expanded collection of keyboards was joined by the K:03 Spaceship Edition — a long-awaited split keyboard with a metal case from Ergohaven. In this article, I will share my experience using this &amp;ldquo;spaceship&amp;rdquo; and try to describe its features.
+Let&amp;rsquo;s get started!&lt;/p&gt;
+&lt;h2 id=&#34;case&#34;&gt;Case&lt;/h2&gt;
+&lt;p&gt;The keyboard features an anodized aluminum case, which gives the device not only a premium look but also a deep, rich sound to every keystroke.
+You can enjoy the keyboard&amp;rsquo;s typing sound in the video &lt;a href=&#34;https://youtu.be/KwxN4QEYbYo?si=Jye_W-u6q-q23yir&#34;&gt;K:03 &amp;ldquo;Spaceship Edition&amp;rdquo; preview&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>K:03</title>
+      <link>http://localhost:1313/en-gb/pages/docs/k03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en-gb/pages/docs/k03/</guid>
+      
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/layouts/k03.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;connection&#34;&gt;Connection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Before connecting the keyboard to the computer, make sure that the USB-C cable is firmly connected to the connectors on both halves&lt;/li&gt;
+&lt;li&gt;When connecting the keyboard to the computer, make sure the USB-C cable is firmly inserted into the connector&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;customizing-keyboard&#34;&gt;Customizing keyboard&lt;/h2&gt;
+&lt;p&gt;Please refer to the &lt;a href=&#34;http://localhost:1313/en-gb/pages/docs/vial/&#34;&gt;Vial guide&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;caps-word-function&#34;&gt;Caps Word function&lt;/h2&gt;
+&lt;p&gt;Press LShift and RShift simultaneously to activate Caps Word. This function allows you to type entire words in uppercase letters without holding down the Caps Lock key. Caps Word is automatically disabled at the end of a word&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

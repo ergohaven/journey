@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ial on Ergohaven&#39;s journey</title>
+    <link>http://localhost:1313/tags/ial/</link>
+    <description>Recent content in Ial on Ergohaven&#39;s journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language><atom:link href="http://localhost:1313/tags/ial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Всё о программе Vial</title>
+      <link>http://localhost:1313/pages/docs/vial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/docs/vial/</guid>
+      
+      <description>Vial — это кроссплатформенный графический интерфейс с открытым исходным кодом и форк QMK для настройки клавиатуры в режиме реального времени.
+Программа позволяет настроить клавиатуру с помощью простого и интуитивно понятного интерфейса без каких-либо знаний о программировании.
+Первое использование Скачайте и установите последнюю версию программы или используйте веб-версию Подключите клавиатуру и она будет автоматически обнаружена Разблокируйте клавиатуру, кликнув на меню Security, а затем Unlock, и следуйте инструкции, которая будет отображена на экране Измените любую клавишу, которую вы хотите, и она будет мгновенно переназначена, настройте различные параметры по своему вкусу Сохраните раскладку, нажав File &amp;gt; Save current layout (опционально) Давайте теперь проверим, что делают основные вкладки</description>
+      
+    </item>
+    
+  </channel>
+</rss>

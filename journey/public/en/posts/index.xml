@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Ergohaven&#39;s journey</title>
+    <link>http://localhost:1313/en/posts/</link>
+    <description>Recent content in Blog on Ergohaven&#39;s journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Wed, 02 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Which Keyboard to Choose: Wireless or Wired?</title>
+      <link>http://localhost:1313/en/posts/wired_vs_wireless/</link>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/wired_vs_wireless/</guid>
+      
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Hello, as you know, our store has two types of keyboards: wired and wireless. And if you are choosing your first split, it would be logical to take a wireless one to get a minimalist setup on the table, but in fact, it&amp;rsquo;s not that simple, there are several important nuances that I want to talk about today, as well as compare the advantages and disadvantages of connecting both wired and wirelessly.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>K:03 Spaceship Edition: Welcome aboard</title>
+      <link>http://localhost:1313/en/posts/k03spaceship/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/k03spaceship/</guid>
+      
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/k03spaceship/1.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A couple of months ago, my enormously expanded collection of keyboards was joined by the K:03 Spaceship Edition — a long-awaited split keyboard with a metal case from Ergohaven. In this article, I will share my experience using this &amp;ldquo;spaceship&amp;rdquo; and try to describe its features.
+Let&amp;rsquo;s get started!&lt;/p&gt;
+&lt;h2 id=&#34;case&#34;&gt;Case&lt;/h2&gt;
+&lt;p&gt;The keyboard features an anodized aluminum case, which gives the device not only a premium look but also a deep, rich sound to every keystroke.
+You can enjoy the keyboard&amp;rsquo;s typing sound in the video &lt;a href=&#34;https://youtu.be/KwxN4QEYbYo?si=Jye_W-u6q-q23yir&#34;&gt;K:03 &amp;ldquo;Spaceship Edition&amp;rdquo; preview&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Encoder guide</title>
+      <link>http://localhost:1313/en/posts/encoders/</link>
+      <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/encoders/</guid>
+      
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/encoders/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;First, a little general information about what encoders are.&lt;br&gt;
+The basic principle of their work is that when the user turns the handle of the encoder, a certain key is sent for every n degrees of rotation.&lt;br&gt;
+This is useful in scenarios where you need to press the same key repeatedly, for example, we can assign the volume control function to the encoder, etc. You can turn the encoder in two directions: clockwise and counterclockwise - we can assign an increase in sound volume in one direction, and a decrease in another. With encoders, the volume control becomes very accessible and convenient, and due to the tactile response of the encoder, even a slightly pleasant process.&lt;br&gt;
+In addition to scrolling, encoders can also be pressed, and the function of the press can be absolutely anything, for example, macro or mute.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hello World!</title>
+      <link>http://localhost:1313/en/posts/hello-world/</link>
+      <pubDate>Fri, 24 Jan 2025 16:51:45 +0300</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/hello-world/</guid>
+      
+      <description>&lt;h2 id=&#34;new-year---new-beginning&#34;&gt;New Year - new beginning&lt;/h2&gt;
+&lt;p&gt;We are glad to welcome you to our new platform - Ergohaven&amp;rsquo;s Journey.&lt;br&gt;
+Here you will find our blog, documentation, answers to frequently asked questions, as well as firmware and layouts for our keyboards.&lt;/p&gt;
+&lt;p&gt;Last year, it was decided to create a simple and convenient knowledge base specifically for our users, which will help in their * travel * in the world of ergonomic keyboards.
+We also decided to transfer a blog here due to ease of use when creating new article, and the most interesting thing is that this platform is completely open and placed on our Hithabe.&lt;br&gt;
+This means that now anyone can make editing in the documentation, help in filling the FAQ or even offer their article on the blog. But this is not all: in the future we consider the opportunity to arrange competitions for the best article of the month with interesting prizes and it is very important for us to know your opinion about this, so be sure to write to our telegram group, what you think about all this.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Trackball mini guide</title>
+      <link>http://localhost:1313/en/posts/trackball_mini/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/trackball_mini/</guid>
+      
+      <description>&lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;
+&lt;p&gt;The trackball itself, although it performs the same function of cursor control as a mouse, but the experience of using these two devices is completely different, and they are suitable for completely different tasks&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/trackball_mini/01.png&#34; alt=&#34;image&#34;&gt;&lt;br&gt;
+&lt;em&gt;Ergohaven Trackball Mini&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;the-main-advantages-of-a-trackball-over-a-mouse&#34;&gt;The main advantages of a trackball over a mouse&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;compactness - it will take up much less space on the table than a mouse, and even more so, such a small one, which was developed by the Ergohaven team;&lt;/li&gt;
+&lt;li&gt;ergonomics - the position of the hand while spinning the ball, there is less strain on the wrist, and in general the control itself with the fingers seems more natural than the way we work with the mouse;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The only downside I can note is that it is more difficult to accurately move the trackball over a long distance; in this case, I most often spin the ball with force, sending it floating freely, and here the predictability of where the cursor will stop is poor, so I have to move the cursor further.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Layer for apps</title>
+      <link>http://localhost:1313/en/posts/layer_for_apps/</link>
+      <pubDate>Mon, 08 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/layer_for_apps/</guid>
+      
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;I’ve been using desktops in Windows for a long time, they’re very useful, I opened a work chat on one desktop, a browser on the second, an IDE on the third, etc., you can quickly switch without taking your hands off the keyboard.&lt;/p&gt;
+&lt;p&gt;At some point I had 6 active desktops, and to switch from 6 to 1 I had to press the hotkey 6 times&amp;hellip; and then back another 6.. The thought arose, maybe there is some kind of hotkey to switch specifically to 6 table? But, unfortunately, there is no such thing in Windows itself, which is strange.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>What are switches and how to choose them correctly</title>
+      <link>http://localhost:1313/en/posts/switches_guide/</link>
+      <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/switches_guide/</guid>
+      
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In this article I will describe general information about what switches are and will try to simplify the pain of choosing which to buy&lt;/p&gt;
+&lt;p&gt;First of all, what is it even, what does it look like?
+Switches are the mechanisms of each key on the keyboard; in the photo below they are highlighted with a red frame.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/switches_guide/1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Switches are a key component of the keyboard, and their selection determines how the keys feel when pressed. There are a huge variety of switches, but they are mainly divided into 3 groups: linear, tactile and clicky. Let us briefly consider the features of each group.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>How to learn to touch typing</title>
+      <link>http://localhost:1313/en/posts/touchtyping/</link>
+      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/en/posts/touchtyping/</guid>
+      
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s no secret that our store sells keycaps without symbols, some customers are stunned and decide to get the standard keycaps with symbols elsewhere.&lt;br&gt;
+In this article, you will find out what is touch typing and why you should consider to switch to blank keycaps.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/touchtyping/3.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-is-touch-typing&#34;&gt;What is touch typing?&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Description from Wikipedia:&lt;/em&gt;&lt;br&gt;
+Touch typing (also called blind typing, or touch keyboarding) is a style of typing. Although the phrase refers to typing without using the sense of sight to find the keys—specifically, a touch typist will know their location on the keyboard through muscle memory—the term is often used to refer to a specific form of touch typing that involves placing the eight fingers in a horizontal row along the middle of the keyboard (the home row) and having them reach for specific other keys.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

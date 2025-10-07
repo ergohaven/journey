@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Keyboard configuration in ZMK keymap-editor | Ergohaven&#39;s journey</title>
+<meta property="og:title" content="Keyboard configuration in ZMK keymap-editor | Ergohaven&#39;s journey" />
+<meta name="twitter:title" content="Keyboard configuration in ZMK keymap-editor | Ergohaven&#39;s journey" />
+<meta itemprop="name" content="Keyboard configuration in ZMK keymap-editor | Ergohaven&#39;s journey" />
+<meta name="application-name" content="Keyboard configuration in ZMK keymap-editor | Ergohaven&#39;s journey" />
+<meta property="og:site_name" content="Ergohaven&#39;s journey" />
+
+<meta name="description" content="A platform with useful information, made for you 😉">
+<meta itemprop="description" content="A platform with useful information, made for you 😉" />
+<meta property="og:description" content="A platform with useful information, made for you 😉" />
+<meta name="twitter:description" content="A platform with useful information, made for you 😉" />
+
+<meta property="og:locale" content="en" />
+<meta name="language" content="en" />
+
+  <link rel="alternate" hreflang="en-gb" href="http://localhost:1313/en-gb/pages/docs_en/keymap-editor/" title="English" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.142.0">
+
+    
+    <meta property="og:url" content="http://localhost:1313/en-gb/pages/docs_en/keymap-editor/">
+  <meta property="og:site_name" content="Ergohaven&#39;s journey">
+  <meta property="og:title" content="Keyboard configuration in ZMK keymap-editor">
+  <meta property="og:description" content="Keymap-editor is a powerful tool for configuring keyboards on ZMK, allowing you to conveniently and quickly turn an idea into a ready-made layout. This article describes the procedure for connecting keymap-editor and its main features from the perspective of both a new user, just beginning to delve into the world of split keyboards, and someone already familiar with split keyboards and configuring layouts in Vial.
+Getting started with keymap-editor Keymap-editor is a web application, accessible from a browser at https://nickcoutsos.github.io/keymap-editor/. To use it, you need to meet several conditions:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="pages">
+    <meta property="article:tag" content="Guide">
+    <meta property="article:tag" content="Zmk">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Keyboard configuration in ZMK keymap-editor">
+  <meta name="twitter:description" content="Keymap-editor is a powerful tool for configuring keyboards on ZMK, allowing you to conveniently and quickly turn an idea into a ready-made layout. This article describes the procedure for connecting keymap-editor and its main features from the perspective of both a new user, just beginning to delve into the world of split keyboards, and someone already familiar with split keyboards and configuring layouts in Vial.
+Getting started with keymap-editor Keymap-editor is a web application, accessible from a browser at https://nickcoutsos.github.io/keymap-editor/. To use it, you need to meet several conditions:">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/en-gb/pages/docs_en/keymap-editor/">
+    <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+</head>
+<body data-theme = "auto" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/en-gb/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Home</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/en-gb/posts/">
+                        Blog
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/en-gb/tags/docs/">
+                        Documentation
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/roadmap_en">
+                        Roadmap
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/en-gb/pages/faq/">
+                        FAQ
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="https://ergohaven.xyz/shop">
+                        Shop
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Keyboard configuration in ZMK keymap-editor</h1>
+                
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b>Table of Contents</b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#getting-started-with-keymap-editor">Getting started with keymap-editor</a></li>
+    <li><a href="#remapping-keys">Remapping keys</a></li>
+    <li><a href="#layers">Layers</a>
+      <ul>
+        <li><a href="#renaming-layers">Renaming layers</a></li>
+        <li><a href="#switching-layers">Switching layers</a>
+          <ul>
+            <li><a href="#mo">&amp;mo</a></li>
+            <li><a href="#lt">&amp;lt</a></li>
+            <li><a href="#tog">&amp;tog</a></li>
+            <li><a href="#to">&amp;to</a></li>
+            <li><a href="#sl">&amp;sl</a></li>
+          </ul>
+        </li>
+        <li><a href="#moving-layers">Moving layers</a></li>
+        <li><a href="#copying-layers">Copying layers</a></li>
+        <li><a href="#quick-key-assignment">Quick key assignment</a></li>
+      </ul>
+    </li>
+    <li><a href="#several-useful-behaviors">Several useful behaviors</a>
+      <ul>
+        <li><a href="#mt"><code>&amp;mt</code></a></li>
+        <li><a href="#sk"><code>&amp;sk</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#behaviors-tab">Behaviors tab</a>
+      <ul>
+        <li><a href="#reconfigurations">Reconfigurations</a></li>
+        <li><a href="#custom-behaviors">Custom Behaviors</a></li>
+      </ul>
+    </li>
+    <li><a href="#useful-custom-behaviors">Useful custom behaviors</a>
+      <ul>
+        <li><a href="#td"><code>&amp;td</code></a></li>
+        <li><a href="#mod-morph"><code>&amp;mod-morph</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#combo">Combo</a></li>
+    <li><a href="#macros">Macros</a>
+      <ul>
+        <li><a href="#macro-execution-cycle">Macro execution cycle</a></li>
+        <li><a href="#parameterized-macros">Parameterized macros</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </details>
+            <div class="page-content">
+                <p><img src="/images/keymap-editor/editor.png" alt="image"></p>
+<p><strong>Keymap-editor</strong> is a powerful tool for configuring keyboards on ZMK, allowing you to conveniently and quickly turn an idea into a ready-made layout.
+This article describes the procedure for connecting keymap-editor and its main features from the perspective of both a new user, just beginning to delve into the world of split keyboards, and someone already familiar with split keyboards and configuring layouts in Vial.</p>
+<h2 id="getting-started-with-keymap-editor">Getting started with keymap-editor</h2>
+<p>Keymap-editor is a web application, accessible from a browser at <a href="https://nickcoutsos.github.io/keymap-editor/">https://nickcoutsos.github.io/keymap-editor/</a>.
+To use it, you need to meet several conditions:</p>
+<ol>
+<li>The user must be registered on <a href="https://github.com/">https://github.com/</a></li>
+<li>The user needs a fork of the repository <a href="https://github.com/ergohaven/ergohaven-zmk-config">https://github.com/ergohaven/ergohaven-zmk-config</a></li>
+</ol>
+<p><img src="/images/keymap-editor/fork.png" alt="image"></p>
+<ol start="3">
+<li>
+<p>In the fork, you need to enable GitHub Actions to automatically build the firmware after making changes to the layout. Go to the <strong>Actions</strong> tab and click the <strong>I understand my workflows, go ahead and enable Actions</strong> button.</p>
+</li>
+<li>
+<p>Go to <a href="https://nickcoutsos.github.io/keymap-editor/">https://nickcoutsos.github.io/keymap-editor/</a>, on the opened page, select GitHub, authorize, and grant access to the created fork for Keymap Editor.
+To grant access, check the <em>Only select repositories</em> option, and select your fork of the <code>/ergohaven/ergohaven-zmk-config</code> repository. Then click <strong>Save</strong> to commit the access settings changes.</p>
+</li>
+</ol>
+<p><img src="/images/keymap-editor/access.png" alt="image"></p>
+<p>Once the steps described above are completed, the layout is ready for changes, hooray!
+Go to <a href="https://nickcoutsos.github.io/keymap-editor/">https://nickcoutsos.github.io/keymap-editor/</a> and you will see the default layout.</p>
+<p><img src="/images/keymap-editor/default.png" alt="image"></p>
+<h2 id="remapping-keys">Remapping keys</h2>
+<p>To remap a key, click on it, and a window will open to select a new <em>Behavior</em> for this key.</p>
+<p><img src="/images/keymap-editor/kp.png" alt="image"></p>
+<p>In the window, you need to select a <em>Behavior</em> for this key. <em>Behavior</em> is an entity in ZMK that determines what action will be performed when the key is pressed, for example, <code>&amp;kp</code> (Key Press) simply sends a key press to the OS. Each <code>&amp;kp</code> has a <code>Key Code</code> parameter, in which we specify which specific key will be pressed. In the screenshot above, the <em>Q</em> key is specified in this parameter. If we want to assign <em>Z</em> instead of <em>Q</em>, for example, we need to click on the <code>Key Code</code> field.</p>
+<p><img src="/images/keymap-editor/kp_params.png" alt="image"></p>
+<p>The window expands and the right side displays a list of key codes available for assignment. In the search bar for available key codes, enter <em>Z</em>, select <em>Z</em> among the filtered codes, click <strong>Okay</strong> and it&rsquo;s done, the key has been replaced!</p>
+<p><img src="/images/keymap-editor/key_codes.png" alt="image"></p>
+<blockquote>
+<p>Above the list of keycodes are checkboxes with modifiers <code>Shift</code>, <code>Alt</code>, <code>Ctrl</code>, and <code>Gui</code>, with prefixes &ldquo;L&rdquo; and &ldquo;R&rdquo; indicating the left or right modifier. If you check one of the modifier checkboxes, a key combination with the checked modifier will be sent to the OS. For example, if we checked the <code>LCtrl</code> checkbox in the window above, pressing the key would immediately send the <code>LCtrl + Z</code> combination. Convenient, we make a key combination with one key press!</p>
+</blockquote>
+<p>Next, the changes must be saved. Click <strong>Save</strong> in the upper left corner. If desired, you can give the change a name to remind you which changes to keymap were made, or leave the field blank and click <strong>Commit</strong>.</p>
+<p>The firmware has automatically started building, this process usually takes about two minutes. Click on the blue button with the build status.</p>
+<p><img src="/images/keymap-editor/build_status.png" alt="image"></p>
+<p>The opened page displays the statuses of all build stages. After all stages are completed, an <code>Artifacts</code> section will appear, containing the <code>firmware</code> archive. Click on it to download.</p>
+<p><img src="/images/keymap-editor/firmware.png" alt="image"></p>
+<p>After downloading the <code>firmware</code> archive, flash the keyboard with the files from it, following the steps described in the <a href="https://journey.ergohaven.xyz/en-gb/pages/docs/zmk-keyboards#keyboard-firmware" target="_blank">First steps with a Keyboard on ZMK</a> (see the &ldquo;Keyboard firmware&rdquo; section).</p>
+<p>Changes to the layout have been made!</p>
+<h2 id="layers">Layers</h2>
+<p>Split keyboards use layers, which are a kind of additional modifiers, like <em>Shift</em> or <em>Control</em>. By switching the keyboard to another layer, pressing the keys will register other symbols or functions assigned to that key on that layer.
+Sounds complicated, let&rsquo;s look at an example:
+If you press and hold the red key on the left half, the keyboard will switch to layer 1, and pressing, for example, the <em>W</em> key will send the <em>2</em> key press to the OS, because in the default layout it is assigned to the <em>W</em> position on the 1st layer.</p>
+<p><img src="/images/keymap-editor/layer1-en.png" alt="image"></p>
+<h3 id="renaming-layers">Renaming layers</h3>
+<blockquote>
+<p>You can change the names of layers, this can make it easier to configure the layout. To do this, hover the cursor over the layer name and click the <strong>Edit</strong> button with the pencil icon.</p>
+</blockquote>
+<p><img src="/images/keymap-editor/layer_name.png" alt="image"></p>
+<h3 id="switching-layers">Switching layers</h3>
+<p>In ZMK, there are several <em>Behaviors</em> for switching layers:</p>
+<h4 id="mo">&amp;mo</h4>
+<p><code>&amp;mo</code> - enables the specified layer while the key is held down. This <em>Behavior</em> is used in default layout, <code>&amp;mo 1</code> is assigned to the red key, and holding it down enables the 1st layer.</p>
+<p><img src="/images/keymap-editor/mo.png" alt="image"></p>
+<h4 id="lt">&amp;lt</h4>
+<p><code>&amp;lt</code> - a hybrid <em>Behavior</em> of a standard key press (<code>&amp;kp</code>) and layer activation while the key is held down (<code>&amp;mo</code>).
+For example, on the red key, which has <code>&amp;mo 1</code> in the standard layout, we assign <code>&amp;lt</code>, passing the following parameters: 1st layer and the <em>Space</em> key code. Then, pressing it will type a space, and holding it down will change the layer, pure magic!</p>
+<blockquote>
+<p>It is worth noting that in this way we reduced the number of used keys on the 0th layer, because initially <code>&amp;kp Space</code> and <code>&amp;mo 1</code> were on two separate keys pressed with the thumb, we have combined them into one, and now you can place some other <em>Behavior</em> in place of <code>&amp;kp Space</code>.</p>
+</blockquote>
+<p><img src="/images/keymap-editor/lt.png" alt="image"></p>
+<h4 id="tog">&amp;tog</h4>
+<p><code>&amp;tog</code> - when pressed, toggles the state of the layer, turns on the specified layer if it is off, and vice versa, turns it off if it is on. <em>(analog of TG() from Vial)</em>
+When using this <em>Behavior</em>, it is worth remembering that the <strong>active</strong> layer at the moment is the <strong>enabled</strong> layer with the highest number, by turning on layer 2 by pressing <code>&amp;tog 2</code>, it is impossible to switch to layer 1 by pressing <code>&amp;mo</code> or <code>&amp;tog</code>, because it has a lower number, and despite the fact that pressing <code>&amp;tog 1</code> will <strong>enable</strong> layer 1, the <strong>active</strong> layer will still be layer 2 because it has a higher number. To switch to layers with a number lower than the 2nd layer, you have to place the <code>&amp;tog 2</code> key on the 2nd layer.
+To consolidate, let&rsquo;s analyze the scenario of working with <code>&amp;tog</code> step by step:</p>
+<ul>
+<li>Being on the 0th layer, <code>&amp;tog 2</code> is pressed - layer 2 is enabled, it will not be possible to switch to the 1st layer by pressing <code>&amp;tog 1</code> or <code>&amp;mo 1</code>;</li>
+<li>Being on the 2nd layer, <code>&amp;tog 2</code> is pressed - layer 2 is disabled, the keyboard returned to the 0th layer, and we can switch to the 1st layer.</li>
+</ul>
+<p><img src="/images/keymap-editor/tog.png" alt="image"></p>
+<h4 id="to">&amp;to</h4>
+<p><code>&amp;to</code> - when pressed, enables the layer specified in the parameter, and disables all other active layers.
+This <em>Behavior</em> is very convenient for switching to a layer by pressing, because unlike <code>&amp;tog</code>, the <code>&amp;to</code> <em>Behavior</em> turns off all active layers, and there is no need to separately disable the current active layer.
+Example: being on the 0th layer, <code>&amp;to 2</code> is pressed - layer 2 is enabled, we can switch to the 1st layer by pressing <code>&amp;to 1</code>, because this behavior, in addition to <strong>enabling</strong> layer 1, <strong>disables</strong> all other enabled layers, in this case the 2nd.</p>
+<p><img src="/images/keymap-editor/to.png" alt="image"></p>
+<h4 id="sl">&amp;sl</h4>
+<p><code>&amp;sl</code> - when pressed, enables the layer specified in the parameter, but only for one press. <em>(analog of OSL() from Vial)</em>
+It is convenient to use this <em>Behavior</em> to switch to a layer with function keys, because most often they need to be pressed 1 time. Pressed <code>&amp;sl 3</code> (on this layer in the default layout are F1-12 keys), the layer turned on, pressed the <em>F1</em> key, and the layer immediately turned off automatically.</p>
+<blockquote>
+<p>It is also important to mention that if no press occurs within 1 second after switching to a layer via <code>&amp;sl</code>, the layer will automatically turn off. This timeout is configured in the Behaviors -&gt; Reconfiguration section, more details in the <a href="#behaviors-tab" target="_blank">Behaviors</a> section.</p>
+</blockquote>
+<p><img src="/images/keymap-editor/sl.png" alt="image"></p>
+<h3 id="moving-layers">Moving layers</h3>
+<p>Sometimes when configuring a layout, it becomes necessary to change the layer order number. In keymap-editor, this is implemented very conveniently, just drag the layer to the desired position.</p>
+<video 
+  autoplay
+  loop
+  muted
+  style="max-width: 100%">
+  <source src="/video/keymap-editor/layer-move.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<p>When moving a layer in this way, keymap-editor automatically adjusts the parameters of all <em>Behaviors</em> that previously activated this layer. For example, if the layout has <code>&amp;mo 2</code>, if you move the 2nd layer to the position of the 1st layer, the assigned key <code>&amp;mo 2</code> will automatically change to <code>&amp;mo 1</code>.</p>
+<h3 id="copying-layers">Copying layers</h3>
+<p>Another useful layer management feature is copying them.
+To make a copy, click on the <strong>&hellip;</strong> button next to the layer name and select <strong>Duplicate Layer</strong>. After clicking, a full copy of the layer will be created.</p>
+<p><img src="/images/keymap-editor/duplicate.png" alt="image"></p>
+<h3 id="quick-key-assignment">Quick key assignment</h3>
+<p>On any layer, you can quickly remap keys by clicking on the <strong>&hellip;</strong> button next to the layer name and selecting <strong>Quick &amp;kp Assignment</strong>.</p>
+<p><video 
+  autoplay
+  loop
+  muted
+  style="max-width: 100%">
+  <source src="/video/keymap-editor/quick-assign.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<em>In the opened window, it is convenient to assign pressing numbers, letters, and function keys</em></p>
+<h2 id="several-useful-behaviors">Several useful behaviors</h2>
+<h3 id="mt"><code>&amp;mt</code></h3>
+<p>The Mod/Tap <em>Behavior</em> allows you to assign a specific <em>Behavior</em> to a <strong>short press</strong> (<em>TAP</em>) of a key, and another <em>Behavior</em> to a <strong>hold</strong> (<em>HOLD</em>) of a key. <em>(Analog of LShift_T, LCtrl_T, etc. keys from the Quantum tab in Vial)</em>
+By default, a <strong>short press</strong> is considered a press lasting less than 200 milliseconds. If you hold it longer, then a <strong>hold</strong> is registered.</p>
+<p><img src="/images/keymap-editor/mt.png" alt="image"></p>
+<p>If you configure the <em>Behavior</em> as in the screenshot above, then when you <strong>short press</strong> the key, the letter <em>D</em> will be typed, and when you <strong>hold</strong> it, the <em>Left Shift</em> will be held down.</p>
+<h3 id="sk"><code>&amp;sk</code></h3>
+<p>When you <strong>press</strong> a Sticky Key, it holds the key down and releases it after the next press of any other key. <em>(Analog of OSM from Vial)</em>
+It is convenient to use with modifiers, assigning <code>&amp;sk LShift</code>, you do not need to hold down the <em>Shift</em> key to type a capital letter, but simply <strong>press</strong> <code>&amp;sk LShift</code> once and immediately release it, the next letter will already be capitalized.</p>
+<p><img src="/images/keymap-editor/sk.png" alt="image"></p>
+<h2 id="behaviors-tab">Behaviors tab</h2>
+<p>On the Behaviors tab, you can create your own custom <em>Behaviors</em> and configure standard ones. Let&rsquo;s start with configuring standard ones.</p>
+<p><img src="/images/keymap-editor/behaviors.png" alt="image"></p>
+<h3 id="reconfigurations">Reconfigurations</h3>
+<p>Here we can change the properties of standard <em>Behaviors</em>, such as those described in the <a href="#layers" target="_blank">Layers</a> section.
+Click the <strong>Add Behavior Reconfiguration</strong> button, in the opened menu select, for example, <code>&amp;sl</code>.</p>
+<p><img src="/images/keymap-editor/reconfiguration.png" alt="image"></p>
+<p>In the opened <em>Reconfigure <code>&amp;sl</code></em> window, we see standard properties that we can change. Let&rsquo;s increase the timeout for <code>&amp;sl</code> so that the layer remains active not for 1 second, but for 3. To do this, in the <code>release-after-ms</code> property line, click the <strong>Override</strong> button and enter 3000 in the appeared field (the units of measurement in the field are milliseconds), and click <strong>Okay</strong>.</p>
+<p><img src="/images/keymap-editor/reconfigured.png" alt="image"></p>
+<p>The <code>&amp;sl</code> entry with overridden properties appeared in the Reconfigure section.
+To view the properties, click the <strong>Edit</strong> button. To completely return the properties to their default values, click the <strong>Delete</strong> button.
+Detailed information about all properties of <em>Behaviors</em> in the <a href="https://zmk.dev/docs/config/behaviors#sticky-key" target="_blank">ZMK documentation</a>.</p>
+<h3 id="custom-behaviors">Custom Behaviors</h3>
+<p>In this section, we can create our own custom <em>Behavior</em> based on standard ones. Let&rsquo;s create a <em>Behavior</em> that will be convenient to implement <em>Home Row Mods</em> (hereinafter HRM), a popular approach to layout design, the main idea of which is that the keys of the <em>home row</em> (A, S, D, F and J, K, L, ;), when held down, activate the modifiers <em>Shift</em>, <em>Ctrl</em>, <em>Gui</em> or <em>Alt</em>.
+Click <strong>Add New Behavior</strong>, in the opened window select <em>Hold or Tap behavior</em>.</p>
+<p><img src="/images/keymap-editor/hrm.png" alt="image"></p>
+<p>In this window, you need to describe the template of what <em>Behaviors</em> will be performed when tapped and held, as well as several properties. Fill in the properties:</p>
+<ul>
+<li><code>Bind</code>: &ldquo;hrm&rdquo;. The name of the behavior, this is what we can use to find the <em>behavior</em> when assigning it to a key;</li>
+<li><code>bindings — HOLD</code>: <code>&amp;kp</code>. When holding the key down, the key with the modifier will be pressed, an ordinary <code>&amp;kp</code> is suitable for this;</li>
+<li><code>bindings — TAP</code>: <code>&amp;kp</code>. Action for a short press, <code>&amp;kp</code> is also suitable for pressing a key with a letter;</li>
+<li><code>tapping-term-ms</code>: 200. If the key is pressed <strong>less than 200 milliseconds</strong>, then the keyboard will register TAP and the key, for example <em>D</em>, will be pressed. If the key is held down <strong>more than 200 milliseconds</strong>, then HOLD will be registered and the modifier specified in the parameters, for example <em>Ctrl</em>, will be pressed;</li>
+<li><code>flavor</code>: balanced. There are several algorithms that allow you to use HRM without strictly relying on the timing from <code>tapping-term-ms</code>, <em>balanced</em> is just one of them. It implies that if the HRM key was pressed for less than 200 milliseconds, but during the HRM key press another key was <strong>pressed and released</strong>, then you need to register the HOLD action.</li>
+</ul>
+<blockquote>
+<p>In the <a href="https://zmk.dev/docs/keymaps/behaviors/hold-tap?examples=home_row_mods#custom-hold-tap-examples" target="_blank">ZMK documentation</a> there is an example of creating an HRM that does not depend on timings at all, without interfering with the typing technique and key rolls. The idea is that the modifiers are strictly pressed on one half, and the key with the letter on the other half. The example describes the properties in the form of code, but in keymap-editor all the properties have the same names and they are easy to adapt.</p>
+</blockquote>
+<p>After filling in the properties, click <strong>Okay</strong>, and we see that our custom <em>Behavior</em> has been successfully created.</p>
+<p><img src="/images/keymap-editor/custom.png" alt="image"></p>
+<p>Next, go to the Layers tab, and assign the created behavior to the <em>D</em> key. In the <em>Behavior</em> assignment window, we need to find and select the created <code>&amp;hrm</code>.</p>
+<p><img src="/images/keymap-editor/hrm2.png" alt="image"></p>
+<p>Fill in the parameters:</p>
+<ul>
+<li>In <em>Parameters — HOLD</em> you need to specify the key code of the desired modifier, specify <em>Ctrl</em>.</li>
+<li>In <em>Parameters — TAP</em> you need to specify the key code of the key sent by tap, select <em>D</em>.</li>
+</ul>
+<p><img src="/images/keymap-editor/hrm3.png" alt="image"></p>
+<blockquote>
+<p>An interesting idea might be to assign the HRM modifier <em>Ctrl</em> to the <em>S</em> key, because then pressing the very frequently used combinations <em>Ctrl + C</em> and <em>Ctrl + V</em> is very convenient with one hand, try it!</p>
+</blockquote>
+<p>After filling in the parameters, click <strong>Okay</strong> and our first <em>Home Row Mod</em> is assigned!
+Similarly, we assign HRM modifiers to all other keys, and all modifiers are already under the fingertips, you no longer have to move your hand to get them.</p>
+<p><img src="/images/keymap-editor/hrm4.png" alt="image"></p>
+<p><em>Tip</em>: you can create several <em>Behaviors</em> with different Tapping Term for different fingers. For example, for the little finger (which is weaker than the index finger) it is worth setting a larger Tapping Term value so that accidental presses are not registered as HOLD.</p>
+<h2 id="useful-custom-behaviors">Useful custom behaviors</h2>
+<p>To create keys with the <em>Behaviors</em> listed below, you need to create a new custom <em>Behavior</em> with the appropriate type.</p>
+<h3 id="td"><code>&amp;td</code></h3>
+<p>Tap Dance assigns different <em>Behaviors</em> depending on how many times in a row the key has been tapped.</p>
+<p><img src="/images/keymap-editor/td.png" alt="image"></p>
+<p>If you assign the Tap Dance from the screenshot to a key, then pressing the key once will type the letter <em>Q</em>, and pressing it twice will press <em>Esc</em>.
+Using a combination of this behavior and <code>&amp;mt</code> it is possible to make a key similar to Tap Dance from Vial.</p>
+<h3 id="mod-morph"><code>&amp;mod-morph</code></h3>
+<p>Mod Morph allows you to add your own custom key press processing if it is pressed with active modifiers <em>Shift</em>, <em>Ctrl</em>, <em>Alt</em> or <em>Gui</em>.</p>
+<p><img src="/images/keymap-editor/morph.png" alt="image"></p>
+<p>If you assign the Mod Morph from the screenshot to a key, then when you press without modifiers, <em>Q</em> will be typed, and when you hold down the <em>Alt</em> modifier, <em>Esc</em> will be typed. Instead of <em>Esc</em> there can be any <em>Behavior</em>, for example changing the layer, or a macro!
+This behavior is a more flexible analogue of Key Overrides from Vial.</p>
+<h2 id="combo">Combo</h2>
+<p><em>Combo</em> allows you to assign a <em>Behavior</em> to the simultaneous pressing of several keys. For example, you can assign the simultaneous pressing of the <em>C</em> and <em>V</em> keys to switch the keyboard layout, or some macro, often this is more convenient than assigning a key in a layer.</p>
+<p>To create a <em>Combo</em>, go to the Combos tab and click <strong>Add New Combo</strong>.</p>
+<p><img src="/images/keymap-editor/combo0.png" alt="image"></p>
+<p>Let&rsquo;s consider an example with a <em>Combo</em> of the <em>C</em> and <em>V</em> keys to change the layout language.
+In the opened window, we need to select the positions of the keys, pressing which will lead to the activation of the combo. To do this, simply click on the positions where the <em>C</em> and <em>V</em> keys are located.</p>
+<p><img src="/images/keymap-editor/combo1.png" alt="image"></p>
+<p>Fill in the name of the combo (in the screenshot &ldquo;lang&rdquo;), and select the <em>Behavior</em> when the combo is activated. <code>&amp;kp</code> pressing <em>Space</em> with the <em>GUI</em> modifier held down is suitable for changing the layout language.</p>
+<p><img src="/images/keymap-editor/combo2.png" alt="image"></p>
+<p>Click on the <strong>Create</strong> button and the combo is ready to use!</p>
+<p>By clicking on the button with the wrench, we can make additional settings for the <em>Combo</em>, for example, change the trigger timeout, or specify on which specific layers the <em>Combo</em> will work (by default, combos work on all layers). You can read more about these settings in the <a href="https://zmk.dev/docs/config/combos" target="_blank">ZMK documentation</a>.
+<img src="/images/keymap-editor/combo3.png" alt="image"></p>
+<h2 id="macros">Macros</h2>
+<p>With the help of <em>Macros</em> you can save some frequently used sequence of key combinations and call this sequence by pressing just one key, for example, make a <em>Macro</em> that types various templates, like this:</p>
+<blockquote>
+<p>```</p>
+<p>```</p>
+</blockquote>
+<p>at the end, the macro can also move the cursor to the middle of this template, saving a lot of presses!</p>
+<p>Let&rsquo;s analyze the creation of such a <em>Macro</em> as an example.
+Go to the Macros tab, and click <strong>Add New Macro</strong>. In the opened window, enter the name of the <em>Macro</em>, for example, enter &ldquo;template&rdquo; and click <strong>Create</strong>.</p>
+<p><img src="/images/keymap-editor/macro0.png" alt="image"></p>
+<p>Next, we need to compose the actions that the <em>Macro</em> will perform. To make the macro type the symbol <strong>`</strong> three times, we use the <code>&amp;kp</code> <em>Behavior</em> three times. When creating a macro, a cell for one <em>Behavior</em> is immediately added, let&rsquo;s add 2 more by pressing the <strong>Add Key Binding</strong> button twice, and assign <code>&amp;kp `</code> in all three cells.</p>
+<p><img src="/images/keymap-editor/macro1.png" alt="image"></p>
+<p>Next, we need to make a line break twice, again write the symbol <strong>`</strong> three times and as the last step press the <em>↑</em> key to move the cursor to the center of the template.</p>
+<p><img src="/images/keymap-editor/macro2.png" alt="image"></p>
+<p>In total, it turns out 9 presses, as many as 9 presses are reduced to just 1!
+By default, ZMK will press each key for 30 ms, and there will be a pause of 15 ms between each press so that the OS has time to process each press. To make the actions work for sure (in all sorts of slow corporate messengers, remote desktops and jiras), and also to make the actions performed by the <em>Macro</em> a little more readable, we divide them into groups by adding an additional pause of 10 ms. To do this, click <strong>Add Control Binding</strong> and move the appeared <code>&amp;macro_press</code> after the first three presses of <strong>`</strong>. Now we must not forget to change <code>&amp;macro_press</code> to <code>&amp;macro_wait_time</code>. To do this, click on it and select <code>&amp;macro_wait_time</code>, in the <em>Raw Value</em> parameter specify 10, this is the number of milliseconds that the macro will wait.</p>
+<p><img src="/images/keymap-editor/macro3.png" alt="image"></p>
+<blockquote>
+<p>Such a delay may not be enough when working on remote desktops, and if this happens, you can increase the time of each press and the delay in the macro parameters, they are opened by clicking on the button with the wrench icon.</p>
+</blockquote>
+<p>It already looks more readable, let&rsquo;s add the same <code>&amp;macro_wait_time</code> after two presses of <em>Enter</em> and after the second group of presses of <strong>`</strong>.</p>
+<p><img src="/images/keymap-editor/macro4.png" alt="image"></p>
+<p>Beauty, now it is visually clear what the <em>Macro</em> does.
+We only have to assign the <em>Macro</em> to a key or <em>Combo</em>, and you can use it!</p>
+<p><img src="/images/keymap-editor/macro5-en.png" alt="image"></p>
+<blockquote>
+<p><em>Macro</em> is a <em>Behavior</em>, and you need to select it in the Behavior field.</p>
+</blockquote>
+<h3 id="macro-execution-cycle">Macro execution cycle</h3>
+<p>Macros in ZMK are executed in 2 steps:</p>
+<ol>
+<li>Actions when the macro is <strong>pressed</strong>,</li>
+<li>Actions when the macro is <strong>released</strong>.</li>
+</ol>
+<p>Initially, this is not noticeable, because without a specific <em>Control Binding</em>, all actions are performed immediately when pressed. To learn how to distinguish between these 2 steps, we will need the following <em>Control Bindings</em>:</p>
+<ul>
+<li><code>&amp;macro_press</code> - for subsequent presses sets the mode in which the specified key will be <strong>pressed</strong>, but will not be <strong>released</strong>;</li>
+<li><code>&amp;macro_release</code> - for subsequent presses sets the mode in which the specified key will be <strong>released</strong>;</li>
+<li><code>&amp;macro_tap</code> - for subsequent presses sets the mode in which the specified key will be <strong>pressed</strong>, and after the time specified in <em>tap_time</em>, will be <strong>released</strong> (default mode);</li>
+<li><code>&amp;macro_tap_time</code> - sets the time between <strong>pressing</strong> and <strong>releasing</strong> each key in the macro (30 ms by default);</li>
+<li><code>&amp;macro_pause_for_release</code> - at this point, the <em>Macro</em> will stop its execution until the <em>Macro</em> key is <strong>released</strong>.</li>
+</ul>
+<p>By applying the listed <em>Control Bindings</em>, you can create a macro that, when <strong>pressed</strong>, switches the layer, presses a certain modifier, then waits for the macro to be <strong>released</strong>, and after that returns the layer back and releases the modifier. It turns out a key that combines <code>&amp;mo</code> and <code>&amp;kp</code>, two in one!</p>
+<p><img src="/images/keymap-editor/macro6.png" alt="image"></p>
+<h3 id="parameterized-macros">Parameterized macros</h3>
+<p><em>Macros</em> in ZMK have an interesting feature, they can be parameterized. To use parameters, you need to apply one or more of the listed <em>Control Bindings</em>:</p>
+<ul>
+<li><code>&amp;macro_param_1to1</code> - to the next <em>Behavior</em> in the macro, the value from parameter 1 of the <em>Macro</em> will be passed as parameter 1;</li>
+<li><code>&amp;macro_param_1to2</code> - to the next <em>Behavior</em> in the macro, the value from parameter 1 of the <em>Macro</em> will be passed as parameter 2;</li>
+<li><code>&amp;macro_param_2to1</code> - to the next <em>Behavior</em> in the macro, the value from parameter 2 of the <em>Macro</em> will be passed as parameter 1;</li>
+<li><code>&amp;macro_param_2to2</code> - to the next <em>Behavior</em> in the macro, the value from parameter 2 of the <em>Macro</em> will be passed as parameter 2.</li>
+</ul>
+<p>Let&rsquo;s consider an example, implementing a <em>Macro</em> that, when <strong>pressed</strong>, activates the layer passed in the parameter, presses the modifier passed in the parameter, waits for the key to be <strong>released</strong>, and then turns off the passed layer and releases the modifier passed in the parameter.
+Let&rsquo;s call the <em>Macro</em> <code>&amp;ml</code> (mod-layer), it will look like this:</p>
+<p><img src="/images/keymap-editor/macro7.png" alt="image"></p>
+<p><code>&amp;macro_param_1<strong>to1</strong></code> and <code>&amp;macro_param_2<strong>to1</strong></code> are selected because the used <em>Behaviors</em> <code>&amp;mo</code> and <code>&amp;kp</code> have one input parameter each.</p>
+<p>It is worth paying attention to how the <em>Macro</em> is assigned in the layout. In the Behavior list, find the created <em>Macro</em> <code>&amp;ml</code>, after selecting it, we need to fill in the parameters:</p>
+<ol>
+<li><em>Layer</em> - this is the layer that will be passed as a parameter for <code>&amp;mo</code>, select 2;</li>
+<li><em>Key Code</em> - this is the key passed to <code>&amp;kp</code>, it will be pressed simultaneously with <code>&amp;mo</code>, we planned to use a modifier, so select <em>LShift</em>.</li>
+</ol>
+<p>That&rsquo;s it, the macro is ready to use! The beauty of such a macro is that it can be used in several places in the layout, specifying any layer to switch to, and any modifier.</p>
+<blockquote>
+<p>When creating a custom <em>Hold or Tap behavior</em>, in <code>bindings — HOLD</code> and <code>TAP</code> you can specify any <em>Behaviors</em>, even parameterized macros - this is very flexible, because when you <strong>hold</strong> the key, any actions will be performed, whatever comes to mind. For example, in the <a href="https://zmk.dev/docs/keymaps/behaviors/macros#layer-activation--more" target="_blank">ZMK documentation</a> there is such an idea: a parameterized macro in which, when the layer is activated, the color of the RGB backlight also changes to the one specified in the parameter, that is, probably, after K:03 and Imperial move to the ZMK rails, it will be possible to select the LED color for different layers! And you can combine this not only with layers, but with anything, even with modifiers!</p>
+</blockquote>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://t.me/ergohavenxyz" target="_blank" rel="noopener noreferrer me"
+    title="Telegram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.968.193 1.798.919 2.286 1.61.516 3.275 1.009 4.654 1.472.509 1.793.997 3.592 1.48 5.388.16.36.506.494.864.498l-.002.018s.281.028.555-.038a2.1 2.1 0 0 0 .933-.517c.345-.324 1.28-1.244 1.811-1.764l3.999 2.952.032.018s.442.311 1.09.355c.324.022.75-.04 1.116-.308.37-.27.613-.702.728-1.196.342-1.492 2.61-12.285 2.997-14.072l-.01.042c.27-1.006.17-1.928-.455-2.474a1.654 1.654 0 0 0-1.034-.407z" />
+</svg>
+</a>
+<a href="https://github.com/ergohaven" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://youtube.com/@ergohaven" target="_blank" rel="noopener noreferrer me"
+    title="Youtube">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+    </path>
+    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+</svg>
+</a>
+<a href="https://instagram.com/ergohaven" target="_blank" rel="noopener noreferrer me"
+    title="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+</svg>
+</a>
+<a href="/index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2025 .
+        Powered by <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Go to top" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

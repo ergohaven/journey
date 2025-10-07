@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Layer for apps | Ergohaven&#39;s journey</title>
+<meta property="og:title" content="Layer for apps | Ergohaven&#39;s journey" />
+<meta name="twitter:title" content="Layer for apps | Ergohaven&#39;s journey" />
+<meta itemprop="name" content="Layer for apps | Ergohaven&#39;s journey" />
+<meta name="application-name" content="Layer for apps | Ergohaven&#39;s journey" />
+<meta property="og:site_name" content="Ergohaven&#39;s journey" />
+
+<meta name="description" content="Наш блог, документация и ответы на часто задаваемые вопросы">
+<meta itemprop="description" content="Наш блог, документация и ответы на часто задаваемые вопросы" />
+<meta property="og:description" content="Наш блог, документация и ответы на часто задаваемые вопросы" />
+<meta name="twitter:description" content="Наш блог, документация и ответы на часто задаваемые вопросы" />
+
+<meta property="og:locale" content="ru" />
+<meta name="language" content="ru" />
+
+  <link rel="alternate" hreflang="ru-ru" href="http://localhost:1313/en/posts/layer_for_apps/" title="Russian" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.142.0">
+
+    
+    <meta property="og:url" content="http://localhost:1313/en/posts/layer_for_apps/">
+  <meta property="og:site_name" content="Ergohaven&#39;s journey">
+  <meta property="og:title" content="Layer for apps">
+  <meta property="og:description" content="Introduction I’ve been using desktops in Windows for a long time, they’re very useful, I opened a work chat on one desktop, a browser on the second, an IDE on the third, etc., you can quickly switch without taking your hands off the keyboard.
+At some point I had 6 active desktops, and to switch from 6 to 1 I had to press the hotkey 6 times… and then back another 6.. The thought arose, maybe there is some kind of hotkey to switch specifically to 6 table? But, unfortunately, there is no such thing in Windows itself, which is strange.">
+  <meta property="og:locale" content="ru">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="en">
+    <meta property="article:published_time" content="2024-07-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-08T00:00:00+00:00">
+    <meta property="article:tag" content="Vial">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Layer for apps">
+  <meta name="twitter:description" content="Introduction I’ve been using desktops in Windows for a long time, they’re very useful, I opened a work chat on one desktop, a browser on the second, an IDE on the third, etc., you can quickly switch without taking your hands off the keyboard.
+At some point I had 6 active desktops, and to switch from 6 to 1 I had to press the hotkey 6 times… and then back another 6.. The thought arose, maybe there is some kind of hotkey to switch specifically to 6 table? But, unfortunately, there is no such thing in Windows itself, which is strange.">
+
+
+    
+
+    <link rel="canonical" href="http://localhost:1313/en/posts/layer_for_apps/">
+    <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+</head>
+<body data-theme = "auto" class="notransition">
+
+<script src="/js/theme.js"></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="http://localhost:1313/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title>Домой</title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/posts/">
+                        Блог
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/docs">
+                        Документация
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/all/pages/roadmap/">
+                        Roadmap
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/faq">
+                        FAQ
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="https://ru.ergohaven.xyz/shop">
+                        Магазин
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Layer for apps</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2024-07-08T00:00:00&#43;00:00" itemprop="datePublished"> 8 июл. 2024 г. </time>
+                </div>
+                
+            </header>
+            
+    
+    <details class="toc" ZgotmplZ>
+        <summary><b>Содержание</b></summary>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#its-too-long-too-lazy-to-read">It&rsquo;s too long; too lazy to read</a></li>
+    <li><a href="#the-beginning-of-a-long-journey">The beginning of a long journey</a></li>
+    <li><a href="#what-are-the-options-for-solving-the-problem">What are the options for solving the problem?</a></li>
+    <li><a href="#what-about-the-keyboard">What about the keyboard?</a></li>
+    <li><a href="#lets-try-the-found-options">Let&rsquo;s try the found options</a></li>
+    <li><a href="#ps">P.S.</a></li>
+  </ul>
+</nav>
+    </details>
+            <div class="page-content">
+                <h2 id="introduction">Introduction</h2>
+<p>I’ve been using desktops in Windows for a long time, they’re very useful, I opened a work chat on one desktop, a browser on the second, an IDE on the third, etc., you can quickly switch without taking your hands off the keyboard.</p>
+<p>At some point I had 6 active desktops, and to switch from 6 to 1 I had to press the hotkey 6 times&hellip; and then back another 6.. The thought arose, maybe there is some kind of hotkey to switch specifically to 6 table? But, unfortunately, there is no such thing in Windows itself, which is strange.</p>
+<p><img src="/images/layer_for_apps/1.png" alt="image"><br>
+<em>Those same 6 desktops (ノಠ益ಠ)ノ彡┻━┻</em></p>
+<h2 id="its-too-long-too-lazy-to-read">It&rsquo;s too long; too lazy to read</h2>
+<ul>
+<li>Section with a brief summary of the article; for more details, go to the next section.</li>
+<li>Programs pinned to the taskbar can be opened by pressing the combinations GUI + 1-9, if it is already running, the program will expand, cool, but there is a limit on the number.</li>
+<li>If you need to run more programs, then an excellent solution would be to write scripts on AutoHotKey. With AHK you can assign many different actions to specific keyboard shortcuts. Example scripts can be found in the AutoHotKey section of this article.</li>
+</ul>
+<h2 id="the-beginning-of-a-long-journey">The beginning of a long journey</h2>
+<p>I found an open source alternative to desktops, the komorebi window manager, tinkered with the application for several days and it didn’t work. It seems to have everything I need, you can set up several tables, there are hotkeys for switching to each and many other interesting features inherent in window managers.</p>
+<p><img src="/images/layer_for_apps/2.png" alt="image"><br>
+<em>This is the kind of beauty that komorebi allows you to create</em></p>
+<p>Didn&rsquo;t work because It seemed inconvenient to configure the tables, there we fill out a json file in which we write which application starts on which table, and this does not work if, for example, I need to open 2 separate profiles of the same browser on different tables, because they have the same .exe file, they start only with different arguments, but unfortunately there was no such tuning in komorebi. Yes, and I only need 6 hotkeys, and the window manager provides a ton of functionality that I don’t really need.</p>
+<h2 id="what-are-the-options-for-solving-the-problem">What are the options for solving the problem?</h2>
+<p>One day, while surfing YouTube, I came across a video with an interesting layout from Ben Vallack. I especially liked what I heard about combinations with the MEH button (Ctrl + Shift + Alt). It runs on MacOS, as far as I understand there is a Keyboard Maestro program, in it you can assign hotkeys to open any application, and not only.</p>
+<p><img src="/images/layer_for_apps/3.png" alt="image"><br>
+<em>Keyboard Maestro has a ton of different configuration options for keyboard shortcuts</em></p>
+<p>If you think about it this way, then I don’t really need desktops, this option would also suit me perfectly, because&hellip; Essentially, I just keep 6 applications deployed to full screen on 6 different tables.</p>
+<p>Buying a Mac to solve such a problem would be a bit overkill, and in Windows there don’t seem to be any particular problems for me, so I started googling what options there are for implementing such functionality in Windows.</p>
+<p>The following options came up:</p>
+<ol>
+<li>The simplest one and does not require any dancing with tambourines, as it turns out, is already built into Windows, you can pin the program to the taskbar at the bottom and call these programs with the combinations Win + 1-0 (the serial number of the program on the taskbar);</li>
+</ol>
+<p><img src="/images/layer_for_apps/4.png" alt="image"><br>
+<em>Sleeping cat (and programs pinned to my taskbar)</em></p>
+<ol start="2">
+<li>You can also run scripts using the AutoHotkey program (hereinafter referred to as AHK), in general, this is a good option; in scripts you can make all sorts of logic, like if the application is open, we don’t launch it a second time, but just focus. The method involves immersing yourself in the AHK scripting language, which is a good option, but I decided to google it some more;</li>
+</ol>
+<p><img src="/images/layer_for_apps/12.png" alt="image"><br>
+<em>Example script on AHK</em></p>
+<ol start="3">
+<li>PowerToys has a “Keyboard Manager” module, it does exactly what is required, using a combination you can open an application, open it with some arguments and other interesting things, which is exactly what I needed, and a couple of other PowerToys modules I&rsquo;m already in use.</li>
+</ol>
+<p><img src="/images/layer_for_apps/5.png" alt="image"><br>
+<em>PowerToys Keyboard Manager Window</em></p>
+<h2 id="what-about-the-keyboard">What about the keyboard?</h2>
+<p>In Vial I decided to make a separate layer for this matter, which I switch to via OSL; it seemed most convenient to me here for several reasons:</p>
+<pre><code>It’s convenient that you don’t have to hold it down, just tap it and it’s already on the layer;
+Unlike TG, OSL activates the layer only for one click and then automatically returns you to the previous layer, which is perfect for my use case, because I can’t imagine a case where I need to switch between applications twice in a row.
+</code></pre>
+<p>I placed the button to activate the layer with applications under my thumb, because I switch between applications very often.</p>
+<p><img src="/images/layer_for_apps/6.png" alt="image"><br>
+<em>I couldn’t find a good use for OSL for a long time, but here it fits perfectly</em></p>
+<p>I assigned the functions LGUI(1) - LGUI(0) to the layer itself, to make it easier to remember where which applications were, and scattered hotkeys across the keyboard in such a way that a certain association was created in the head - in the place of the letter T - the hotkey for opening the cart, in the place of the letter W - hotkey for opening the working browser, in place of the letter S is obsidian, in which I take notes (assigned to S, not O because I wanted to place everything under my left hand, it’s convenient so as not to remove my right hand from the mouse/trackball, if someday I get my hands on an HPD with a trackball, and the mouse is no longer so needed, I will probably use the right half for applications).</p>
+<p><img src="/images/layer_for_apps/7.png" alt="image"></p>
+<h2 id="lets-try-the-found-options">Let&rsquo;s try the found options</h2>
+<p>I decided to start with the easiest way to test it - pinning it to the taskbar. First impressions are great, this is exactly what I wanted to get in the end. Due to the fact that I arranged the buttons associatively, I got used to it quite quickly, I make much fewer mouse movements, and the problem that arose with switching from 1 desktop to 6 no longer appears.</p>
+<p>I liked the approach so much that the Windows keyboard shortcuts from 1 to 0 weren’t enough, I bound all the most used applications and it wasn’t enough.. Eh</p>
+<p>I went to try the second most accessible option for me - already installed PowerToys, in the keyboard manager I tried to reassign the keyboard shortcuts.</p>
+<p><img src="/images/layer_for_apps/8.png" alt="image"></p>
+<p>There is a lot of customization for combinations, in my case I assigned the combination CTRL + ALT + SHIFT (the same MEH from qmk and vial) + A, selected the Action “Run a program” and selected the executable file of the application I needed, vial.</p>
+<p>With this approach, everything worked fine, but not with all programs; Steam, for example, for some reason did not work until I selected the option “If running” = “Run another” for it. These are apparently features of specific applications, but it’s worth taking them into account, and by the way, such things did not appear when launching applications from the taskbar, so perhaps it’s worth launching applications like Steam from the task bar.</p>
+<p><img src="/images/layer_for_apps/9.png" alt="image"><br>
+<em>This is what a layer with bells and whistles from PowerToys looks like</em></p>
+<p>At this stage, the idea has already been implemented and functions the way I wanted, but I decided to try method 3, scripts with AHK.</p>
+<p>AutoHotKey</p>
+<p>This required more preliminary steps than in the previous two methods; I installed the AutoHotKey Dash program from the website, using which you can compile the .ahk script into a launchable file.</p>
+<p><img src="/images/layer_for_apps/10.png" alt="image"><br>
+<em>Program window</em></p>
+<p>AHK scripts seem to have existed for a very long time, there is a lot of documentation and information on them on the forums. After searching for a while, I came across several examples of how you can implement opening an application using a keyboard shortcut.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">{   
+</span></span><span class="line"><span class="cl">    if PID := ProcessExist(&#34;Code.exe&#34;)
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        WinActivate &#34;ahk_pid &#34; PID
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    else
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        Run &#34;C:\Users\ivans\AppData\Local\Programs\Microsoft VS Code\Code.exe&#34;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    return
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><p>Briefly what is written here:</p>
+<p>Line 8: In short, the line indicates that we are doing the key combination Ctrl + Alt + Shift + E. &ldquo;!+^&rdquo; is such a designation that the button must be pressed with the modifiers Ctrl + Alt + Shift. “SC12” is a scan code for the E key (I couldn’t figure out why it doesn’t work if I just write a letter instead of the scan code..).</p>
+<p>Line 10: here we ask the ProcessExist function whether the desired program is running, in this example Code.exe, if it is running, then we save the process identifier in the PID variable, and go to line 12.</p>
+<p>Line 12: Since we have verified that the program is running, we just need to switch to that program&rsquo;s window. We call the WinActivate function and pass it the identifier of the found process, stored in the PID variable.</p>
+<p>If on line 10 it turns out that the Code.exe program is not running, then we end up in the else block, on line 16.</p>
+<p>Line 16: we found out that the program is not running, we need to run it. Using the Run function, we launch the program, passing the path to the file in quotes.</p>
+<p>Next, we compile the script, run the resulting .exe file, and, voila, when you press the key combination, everything magically opens!</p>
+<p>In fact, with AHK everything turned out to be much simpler than I initially expected; there really is a lot of documentation, as well as various kinds of answers on the forums. You can find a ready-made script for almost any request.</p>
+<p>In most cases, the implemented functionality is not very different from what PowerToys allows you to do, however, there are various non-standard cases when PowerToys can no longer cope, for example, if we run the sample1.exe file, and it runs the sample2.exe file under the hood, and already It is he who hangs in open processes. In this case, AHK allows you to create custom logic: if sample2.exe is not open, then run sample1.exe. Or, for example, it is possible to search for running applications not by the file name, but by the name of the window; this was useful for assigning the opening of the YouTube browser application to a keyboard shortcut.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">{   
+</span></span><span class="line"><span class="cl">    if WinExist(&#34;YouTube -.*YouTube&#34;)
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        WinActivate
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    else
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">        Run &#34;C:\Program Files\BraveSoftware\Brave-Browser\Application\chrome_proxy.exe  --args&#34;
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    return
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><p>This is a cool thing, it allows you to develop the idea of launching applications in combination to the maximum. I will definitely continue to use it in the future.
+Results</p>
+<p>In my opinion, it turned out to be 10 out of 10, the number of movements performed by the mouse has decreased very much, and I switch between applications in an instant. Now I’m really ready for HPD with a trackball, before this I had doubts because&hellip; I work a lot with the cursor, but with the implemented layer for applications I hardly reach for the mouse. Now we just have to wait for the actual updated HPD.</p>
+<p>Another option is to consider implementing such a layer on a macropad, for example, if there are already too many layers on the main keyboard and there is nowhere to cram it.</p>
+<p>It is also worth noting that there is literally one situation in which I have not yet found a solution through AHK - how to open two different profiles of the same browser with two different keyboard shortcuts. They seem to have the same process running, and there is no profile name in the window title.. Here I will continue to use opening through the taskbar. And I will most likely give up using PowerToys in the end, because AHK allows you to do the same things, but with more fine-tuning.</p>
+<h2 id="ps">P.S.</h2>
+<p>If you try to create scripts in AHK, I strongly advise you to read the documentation; you can often find useful examples there. It was a little difficult for me to navigate it and find the specific functions I needed, but it helped that I noticed the sections on the left side of the screen. I found the Process and Window sections most useful for the task of launching applications; they have functions for searching for a running program by any parameters.</p>
+<p><img src="/images/layer_for_apps/11.png" alt="image"><br>
+<em><a href="https://www.autohotkey.com/docs/v2/lib/ProcessExist.htm">https://www.autohotkey.com/docs/v2/lib/ProcessExist.htm</a></em></p>
+<p>Author: <a href="https://t.me/Wanyan1337">Ivan Seleznev</a><br>
+Discuss in our <a href="https://t.me/&#43;E-mlq11c97AyZmY6">telegram group</a></p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://t.me/ergohavenxyz" target="_blank" rel="noopener noreferrer me"
+    title="Telegram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.968.193 1.798.919 2.286 1.61.516 3.275 1.009 4.654 1.472.509 1.793.997 3.592 1.48 5.388.16.36.506.494.864.498l-.002.018s.281.028.555-.038a2.1 2.1 0 0 0 .933-.517c.345-.324 1.28-1.244 1.811-1.764l3.999 2.952.032.018s.442.311 1.09.355c.324.022.75-.04 1.116-.308.37-.27.613-.702.728-1.196.342-1.492 2.61-12.285 2.997-14.072l-.01.042c.27-1.006.17-1.928-.455-2.474a1.654 1.654 0 0 0-1.034-.407z" />
+</svg>
+</a>
+<a href="https://github.com/ergohaven" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://youtube.com/@ergohaven" target="_blank" rel="noopener noreferrer me"
+    title="Youtube">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+    </path>
+    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+</svg>
+</a>
+<a href="https://instagram.com/ergohaven" target="_blank" rel="noopener noreferrer me"
+    title="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+</svg>
+</a>
+<a href="/index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2025 .
+        Создано с помощью <a href="https://github.com/hugo-sid/hugo-blog-awesome" target="_blank" rel="noopener">Hugo blog awesome</a>.
+    </small>
+</footer><a href="#" title="Перейти наверх" id="totop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" stroke="currentColor" viewBox="0 96 960 960">
+    <path d="M283 704.739 234.261 656 480 410.261 725.739 656 677 704.739l-197-197-197 197Z"/>
+</svg>
+
+</a>
+
+
+    
+
+
+
+
+    
+    
+        
+    
+
+    
+    
+        
+    
+
+
+
+    
+    <script async src="http://localhost:1313/js/main.js" ></script>
+
+    
+
+</body>
+</html>

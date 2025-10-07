@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zmk on Ergohaven&#39;s journey</title>
+    <link>http://localhost:1313/tags/zmk/</link>
+    <description>Recent content in Zmk on Ergohaven&#39;s journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language><atom:link href="http://localhost:1313/tags/zmk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Настройка клавиатуры в ZMK keymap-editor</title>
+      <link>http://localhost:1313/pages/docs/keymap-editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/docs/keymap-editor/</guid>
+      
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/keymap-editor/editor.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keymap-editor&lt;/strong&gt; — это мощный инструмент для настройки клавиатуры на ZMK, позволяющий удобно и быстро воплотить идею в готовую раскладку.
+В статье описана процедура подключения keymap-editor и основные возможности с точки зрения как нового пользователя, только начинающего погружение в мир сплит-клавиатур, так и уже знакомого с сплит-клавиатурами и настройкой раскладки в Vial.&lt;/p&gt;
+&lt;h2 id=&#34;начало-работы-с-keymap-editor&#34;&gt;Начало работы с keymap-editor&lt;/h2&gt;
+&lt;p&gt;Keymap-editor является веб-приложением, он доступен из браузера по адресу &lt;a href=&#34;https://nickcoutsos.github.io/keymap-editor/&#34;&gt;https://nickcoutsos.github.io/keymap-editor/&lt;/a&gt;.
+Чтобы им воспользоваться, требуется выполнить несколько условий:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Первые шаги с клавиатурой на ZMK</title>
+      <link>http://localhost:1313/pages/docs/zmk-keyboards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/docs/zmk-keyboards/</guid>
+      
+      <description>&lt;p&gt;В статье содержится руководство, которое поможет сделать первые шаги в освоении клавиатуры на ZMK. Прочитав статью пользователь научится: управлять питанием клавиатуры, подключать клавиатуру к нескольким устройствам и обновлять прошивку.&lt;/p&gt;
+&lt;h2 id=&#34;подключение-клавиатуры&#34;&gt;Подключение клавиатуры&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Если при подключении клавиатуры к вашему устройству возникли какие-то неполадки, попробуйте перезагрузить Bluetooth на вашем устройстве и пройти все описанные ниже шаги заново.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Шаг 1. Для начала включаем её, переключив физический тумблер в положение &amp;ldquo;On&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/zmk-keyboards/buttons.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Шаг 2. Далее половинки надо соединить между собой, для этого одновременно на обоих половинках нажимаем кнопку &amp;ldquo;Reset&amp;rdquo;, находящуюся на дне.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Руководство по настройке и прошивке клавиатуры с Ergohaven&#39;s Qube</title>
+      <link>http://localhost:1313/pages/docs/qube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/pages/docs/qube/</guid>
+      
+      <description>&lt;p&gt;В этом руководстве мы подробно разберем процесс полной настройки и прошивки сплит-клавиатуры Ergohaven с использованием донгла Qube. Вы узнаете, как подготовить файлы, выполнить полный сброс и правильно прошить все компоненты для стабильной работы.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ergohaven&amp;rsquo;s Qube&lt;/strong&gt; — это универсальный девайс создан для того, чтобы стать незаменимым помощником для беспроводных клавиатур. Работает как донгл, отображает полезную информацию, а также снижает энергопотребление вашей клавиатуры&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/qube/qubes.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;шаг-1-подготовка-прошивки&#34;&gt;Шаг 1: Подготовка прошивки&lt;/h2&gt;
+&lt;p&gt;Прежде чем начать, вам нужно получить актуальные файлы прошивки. Файл прошивки — это, по сути, «мозг» вашей клавиатуры, который определяет, как она работает.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
