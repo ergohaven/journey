@@ -28,5 +28,7 @@ toc: false
 - [x] New modules for HPD                                                                     
 - [x] Dongle for wireless keyboards
 - [ ] Spaceship edition for K:03 wireless
+- [ ] OP36 Spaceship edition
+- [ ] Trackball Royale
 
 **Дисклеймер:** вся информация на данной странице не утверждена окончательно и предоставлена для ознакомления. Изменения и дополнения будут происходить на постоянной основе.
