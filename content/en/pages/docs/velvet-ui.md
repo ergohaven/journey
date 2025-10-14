@@ -15,7 +15,7 @@ The main feature of Velvet UI is a built-in trackball located under the thumb. R
 
 ![image](/images/velvet-ui/layer.png)
 
-The mouse layer contains keys for cursor control: left mouse button (MB1), right mouse button (MB2), middle mouse click (MB3), as well as switching to Scroll mode (&mo 5) and Sniper mode (&mo 6).
+The mouse layer contains keys for cursor control: left mouse button (**MB1**), right mouse button (**MB2**), middle mouse click (**MB3**), as well as switching to Scroll mode (**&mo 5**) and Sniper mode (**&mo 6**).
 The mouse layer is activated when moving the cursor with the trackball, and if the trackball remains stationary for 500 milliseconds, the layer will automatically turn off.
 
 {{< video 
@@ -113,7 +113,7 @@ To prevent accidental mouse layer activations during typing, the layer will not 
 ```
 
 If you want to increase or decrease this threshold, edit the `require-prior-idle-ms` value.  
-> For more information about automatic mouse layer settings, please refer to the ZMK documentation.
+> For more information about automatic mouse layer settings, please refer to the [ZMK documentation](https://zmk.dev/docs/keymaps/input-processors/temp-layer).
 
 
 ### Scroll mode settings
