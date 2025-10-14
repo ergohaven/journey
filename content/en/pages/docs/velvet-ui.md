@@ -7,16 +7,16 @@ tags = ["docs", "velvet-ui"]
 
 **Velvet v3 - Ultimate Interface Edition** is a keyboard that reduces the need to move your hand to a minimum with a keywell layout and a trackball under your thumb. The curved key placement makes moving your fingers between rows of keys noticeably easier, and the functional trackball, easily accessible under your thumb, nearly eliminates the need to move your hand to the mouse.
 
-## Trackball
+## Cursor Control
 
 ![image](/images/velvet-ui/trackball.jpg)
 
-The Velvet UI trackball has one interesting feature - it can detect user touches. In the default layout, briefly touching the trackball will trigger a left mouse button click, and holding your finger on the trackball will activate a special layer with mouse keys.
+The main feature of Velvet UI is a built-in trackball located under the thumb. Rotating the trackball moves the mouse cursor and temporarily activates a special layer with mouse keys.
 
 ![image](/images/velvet-ui/layer.png)
 
-On the mouse layer there are other keys for working with the mouse cursor: right mouse button (**MB2**), mouse wheel click (**MB3**), left mouse button click (**MB1**) is duplicated on the layer for convenience, there are also keys for switching to scroll (**&mo 5**) and sniper (**&mo 6**) modes. 
-In scroll mode, when you rotate the trackball, instead of moving the cursor, the page scrolls both vertically and horizontally.
+The mouse layer contains keys for cursor control: left mouse button (MB1), right mouse button (MB2), middle mouse click (MB3), as well as switching to Scroll mode (&mo 5) and Sniper mode (&mo 6).
+The mouse layer is activated when moving the cursor with the trackball, and if the trackball remains stationary for 500 milliseconds, the layer will automatically turn off.
 
 {{< video 
     autoplay="true"
@@ -37,36 +37,6 @@ Sniper mode reduces the speed of the cursor movement, allowing you to aim it mor
 >}}
 <br />
 
-## Trackball touch actions
-
-The action when you touch the trackball is quite flexible, as you can assign any **behavior** to it.
-
-![image](/images/velvet-ui/keymap.png)
-
-By default, the <a href="https://journey.ergohaven.xyz/en-gb/pages/docs/keymap-editor/#custom-behaviors" target="_blank">custom behavior</a> `&cap_sen` is assigned to the trackball touch, briefly touching the trackball produces a left mouse button click, and holding your finger down activates the mouse layer. You can view details of the behavior or change it in the *Behaviors* tab.
-
-![image](/images/velvet-ui/capsen.png)
-
-
-### Disabling mouse click
-
-To disable the left mouse button click during short-term touch, it is enough to assign `&mo 4` behavior instead of `&cap_sen`. In this way the mouse layer will be activated when touching the trackball, regardless of the duration of the touch.
-
-![image](/images/velvet-ui/keymap-mo.png)
-
-Reassigning trackball touch behavior is also available in **ZMK Studio**.
-
-
-### Delay turning off the mouse layer
-
-With the assigned behavior `&mo 4` every time you move your finger from one edge of the trackball to the other, the mouse layer is deactivated, and if you move your finger often, for example, with intensive cursor control, there is a chance to press a key, exactly in the interval when the mouse layer is deactivated. Sometimes i wanted to press the left mouse button, but got the *F* key... You can reduce the chance of such a situation by using macros, because in them you can assign a temporary pause between actions.
-
-![image](/images/velvet-ui/senmo.png)
-
-The macro from the screenshot, when the user removes their finger from the trackball, will wait a small delay before disabling the mouse layer, this can help reduce mis-presses.
-> With the introduction of a delay before turning off a layer, accidental mouse button clicks may also occur, because there is now a short pause before the layer is turned off. The delay time can be reduced in the macro settings by changing the `Wait (ms)` (default 15 ms) and `Tap (ms)` (default 30 ms) parameters.
- 
-
 
 ## Mode switching
 
@@ -80,7 +50,7 @@ You can also make a hybrid <a href="https://journey.ergohaven.xyz/en-gb/pages/do
 
 ## Trackball configuration
 
-All trackball modes can be customized in the `config/velvet_v3_ui.keymap` file, this can be done quickly and conveniently in the GitHub web-interface by clicking **Edit this file**.
+All trackball modes, including the automatic switching to the mouse layer, can be configured in the `config/velvet_v3_ui.keymap` file, this can be done quickly and conveniently in the GitHub web-interface by clicking **Edit this file**.
 
 ![image](/images/velvet-ui/github-edit.png)
 
@@ -119,7 +89,31 @@ In addition to the `cpi` parameter, a multiplier `<&zip_xy_scaler 9 20>` is also
 &trackball_listener {
     input-processors = <&zip_xy_scaler 9 20>;
 ```
-You can read more about the available `input-processors` in the ZMK documentation: https://zamk.dev/docs/keymaps/input-processors
+You can read more about the available `input-processors` in the ZMK documentation: https://zmk.dev/docs/keymaps/input-processors
+
+
+### Configuring Mouse Layer Activation
+
+The `<&zip_auto_mouse 4 500>` fragment handles the automatic activation of the mouse layer. Let's review the available settings:
+
+- 4 - the number of the layer to be automatically activated. If you change the keymap and the mouse layer gets a different number, simply update this value;
+- 500 - the duration for which the mouse layer remains active.
+
+> If you want to disable the automatic mouse layer activation, simply remove the <&zip_auto_mouse 4 500> fragment.
+
+To prevent accidental mouse layer activations during typing, the layer will not activate for 800 milliseconds after any key press. This delay can also be configured in the fragment located higher in the `config/velvet_v3_ui.keymap` file:
+
+```
+    zip_auto_mouse: zip_auto_mouse {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <800>;
+        excluded-positions = <>;
+    };
+```
+
+If you want to increase or decrease this threshold, edit the `require-prior-idle-ms` value.  
+> For more information about automatic mouse layer settings, please refer to the ZMK documentation.
 
 
 ### Scroll mode settings
