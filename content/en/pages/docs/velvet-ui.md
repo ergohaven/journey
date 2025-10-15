@@ -3,7 +3,7 @@ title = "Velvet v3 – UI Edition"
 tags = ["docs", "velvet-ui"]
 +++
 
-![image](/images/layouts/velvet-ui.png)
+![Velvet v3 UI](/images/layouts/velvet_ui.png)
 
 **Velvet v3 - Ultimate Interface Edition** is a keyboard that reduces the need to move your hand to a minimum with a keywell layout and a trackball under your thumb. The curved key placement makes moving your fingers between rows of keys noticeably easier, and the functional trackball, easily accessible under your thumb, nearly eliminates the need to move your hand to the mouse.
 
