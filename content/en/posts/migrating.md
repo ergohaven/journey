@@ -1,6 +1,6 @@
 +++
 title = 'The Blog Moves'
-date = 2025-10-30T16:51:45+03:00
+date = 2025-10-29T16:51:45+03:00
 +++
 
 ## Social Media Is Everything
