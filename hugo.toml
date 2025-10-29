@@ -69,11 +69,11 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
   #   url = '/'
   #   weight = 10
 
-  [[Languages.en-gb.menu.main]]
-    pageRef="posts"
-    name = 'Blog'
-    url = '/posts/'
-    weight = 20
+  # [[Languages.en-gb.menu.main]]
+  #   pageRef="posts"
+  #   name = 'Blog'
+  #   url = '/posts/'
+  #   weight = 20
 
   [[Languages.en-gb.menu.main]]
     pageRef="docs"
@@ -154,11 +154,11 @@ ignoreErrors = ["additional-script-loading-error"] # ignore error of loading add
   #   url = '/'
   #   weight = 10
   
-  [[Languages.ru-ru.menu.main]]
-    pageRef="posts"
-    name = 'Блог'
-    url = '/posts/'
-    weight = 20
+  # [[Languages.ru-ru.menu.main]]
+  #   pageRef="posts"
+  #   name = 'Блог'
+  #   url = '/posts/'
+  #   weight = 20
 
   [[Languages.ru-ru.menu.main]]
     pageRef="docs"
