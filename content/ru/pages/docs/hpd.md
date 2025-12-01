@@ -22,7 +22,7 @@ tags: ["docs", "hpd"]
 
   1. Откройте **Vial**
   2. В верхнем меню перейдите во вкладку **Layouts**
-  3. Выберите нужное значение DPI в раскрывающемся списке напротив пункта DPI
+  3. Выберите нужное значение **DPI** в раскрывающемся списке напротив пункта **DPI**
 
 ![image](/images/hpd/hpd_dpi.gif) 
 
@@ -37,7 +37,7 @@ tags: ["docs", "hpd"]
 <details>
   <summary>Настройка Auto mouse в Vial</summary>
 
-  1. Скачайте и откройте последнюю версию [**Vial**] (https://github.com/ergohaven/vial-gui/releases) от **Ergohaven**
+  1. Скачайте и откройте последнюю версию [Vial](https://github.com/ergohaven/vial-gui/releases) от **Ergohaven**
   2. В верхнем меню перейдите во вкладку **QMK Settings**
   3. Ниже выберите вкладку **Auto mouse**
   4. Включите автоматическую активацию слоя мыши установив галочку в пункте **Enable auto mouse layer feature**
