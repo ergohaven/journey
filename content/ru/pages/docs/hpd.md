@@ -37,7 +37,7 @@ tags: ["docs", "hpd"]
 <details>
   <summary>Настройка Auto mouse в Vial</summary>
 
-  1. Скачайте и откройте последнюю версию [Vial](https://ru.ergohaven.xyz/vial) от **Ergohaven**
+  1. Скачайте и откройте форк [Vial](https://ru.ergohaven.xyz/vial) от **Ergohaven**
   2. В верхнем меню перейдите во вкладку **QMK Settings**
   3. Ниже выберите вкладку **Auto mouse**
   4. Включите автоматическую активацию слоя мыши установив галочку в пункте **Enable auto mouse layer feature**
