@@ -14,7 +14,7 @@ tags: ["docs", "hpd"]
 
 ### Настройка DPI в Vial (для модуля Trackball)
 
-![image](/images/layouts/hpd_dpi.gif)
+![image](/images/hpd/hpd_dpi.gif)
 
 ## Обновление прошивки
 ### Подготовка
