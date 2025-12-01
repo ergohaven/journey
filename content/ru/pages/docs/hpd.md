@@ -12,6 +12,10 @@ tags: ["docs", "hpd"]
 ## Настройка клавиатуры  
 Пожалуйста перейдите в [статью о программе Vial](/pages/docs/vial) 
 
+### Настройка DPI в Vial (для модуля Trackball)
+
+![image](/images/layouts/hpd_dpi.gif)
+
 ## Обновление прошивки
 ### Подготовка
 - Скачайте последнюю версию прошивки [здесь](http://github.com/ergohaven/keymap_hub) 
