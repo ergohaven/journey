@@ -16,6 +16,7 @@ languageCode: "ru"
 - [Velvet v3 – UI Edition](docs/velvet-ui)
 - [Ergohaven's Qube](docs/qube.md)
 - [Trackball Mini v3](docs/tb-mini-v3.md)
+- [Space Mission 30](docs/sm30.md)
 
 ## Софт
 - [Vial (софт для проводных клавиатур)](docs/vial)
