@@ -9,6 +9,7 @@ languageCode: "ru"
 - [K:03](docs/k03)
 - [High Plains Drifter](docs/hpd)
 - [Imperial44](docs/imperial44)
+- [Imperial44 v4 – Wireless Edition](docs/imperial44-we)
 - [K:03 PRO](docs/k03pro)
 - [M4CR0Pad](docs/macropad)
 - [Planeta](docs/planeta)
