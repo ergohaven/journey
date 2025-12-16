@@ -65,10 +65,7 @@ tags: ["docs", "macropad"]
 
 ## Перепрошивка/обновление встроенного ПО
 ### Подготовка  
-* Скачайте последнюю версию прошивки для вашей версии макропада:
-    - [M4CR0pad v3](https://github.com/ergohaven/vial-qmk/releases/download/3.8.7/3.8.7_macropad_v3.uf2)
-    - [M4CR0Pad v2](https://github.com/ergohaven/vial-qmk/releases/download/3.8.7/3.8.7_macropad_v2.uf2)
-    - [M4CR0Pad v1](https://github.com/ergohaven/vial-qmk/releases/download/3.8.7/3.8.7_macropad_v1.uf2)
+* Скачайте последнюю версию прошивки для вашей версии [макропада](https://github.com/ergohaven/keymap_hub)
 >Версия прошивки должна соответствовать версии макропада, иначе получите некорректную работу макропада
 * Сохраните Вашу раскладку в программе Vial, нажав на меню **"File"** -> **"Save current layout"**
 
