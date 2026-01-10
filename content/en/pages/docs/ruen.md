@@ -14,7 +14,7 @@ This mode is designed to
 
 This works due to the fact that the keyboard remembers the current layout, and if you need to enter a character that is not in the Russian layout, it automatically switches the layout, and after entering the character, it returns the layout back.
 
-The main advantage of this approach is that there is no need to install additional software or non-standard layouts into the system. 
+The main advantage of this approach is that there is no need to install additional software or non-standard layouts into the system.
 
 The main disadvantage is the need to maintain the same layout state in the keyboard and in the system. More details on how to ensure this will be discussed below.
 
@@ -25,7 +25,7 @@ The RuEn mode keys can be found in the Vial program in the User tab. All keys in
 
 ## Presets
 
-Below are simple procedures for pre-configuring the operating system and keyboard for RuEn mode. These are the default settings, and if this is your first time setting up RuEn, it is recommended to go this route. 
+Below are simple procedures for pre-configuring the operating system and keyboard for RuEn mode. These are the default settings, and if this is your first time setting up RuEn, it is recommended to go this route.
 
 However, in some cases the default settings may not suit you:
 - if your system uses a non-standard key combination to change the layout, see section [RuEn M0](#ruen-m0) and [RuEn M1M2](#ruen-m1m2);
@@ -42,7 +42,7 @@ No special pre-configuration is required. Need to make sure that
 
 ### Linux
 
-Need to make sure that 
+Need to make sure that
 - the `Win+Space` key combination actually switches the layout (for Ubuntu this is enabled by default, for other distributions it may require configuration),
 - no individual layout is used for each window.
 
@@ -92,7 +92,7 @@ Switches the state of the keyboard layout without sending any sequences to the s
 
 Switches the internal state and sends the layout change combination to the system.
 
-#### RuEn En 
+#### RuEn En
 
 For the [RuEn Dflt](#ruen-dflt), [RuEn M0](#ruen-m0) modes it works as follows:
 - if the keyboard has a Russian layout, then it sends a combination to change the layout and changes the internal state to the English layout,
@@ -139,7 +139,7 @@ Allows you to set separate macros for switching layouts to English and Russian. 
 2) Set the combination to switch to the English layout in the `M1` macro.
 3) Set the combination to switch to the Russian layout in the `M2` macro.
 4) It is also advisable to temporarily place these macros on the current layout and debug their operation.
-5) Press the `RuEn M1` key. After this, the keyboard, instead of the default combination to switch the layout, will send the macro `M1` to enable the English layout and the macro `M2` to enable the Russian layout.
+5) Press the `RuEn M1M2` key. After this, the keyboard, instead of the default combination to switch the layout, will send the macro `M1` to enable the English layout and the macro `M2` to enable the Russian layout.
 
 This mode is useful because the keyboard sends the language change combination regardless of the state of the internal layout. Thus, it turns out that there is no need to synchronize the internal state and the layout in the system: just press `RuEn Ru` or `RuEn En` once and the internal state will coincide with the layout in the system (the `RuEn Sync` key is not needed in this case). The `RuEn Toggle` key will also work, but take a closer look at the pair of `RuEn Ru` and `RuEn En` keys (believe me, it’s very convenient once you get used to it).
 
@@ -168,18 +168,18 @@ When typing these characters from the Russian layout, it automatically switches 
 - `RuEn <`
 - `RuEn >`
 - ``RuEn ` ``
-- `RuEn ~` 
-- `RuEn @` 
-- `RuEn #` 
-- `RuEn $` 
-- `RuEn ^` 
-- `RuEn &` 
-- `RuEn |` 
+- `RuEn ~`
+- `RuEn @`
+- `RuEn #`
+- `RuEn $`
+- `RuEn ^`
+- `RuEn &`
+- `RuEn |`
 
 ### Character from Russian layout
 
 The only character that is present in the Russian layout and is absent in the English one:
-- `RuEn №` 
+- `RuEn №`
 
 Entering this character works similarly to the previous point, only temporarily switches to the Russian layout if the current layout is English.
 
