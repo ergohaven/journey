@@ -10,7 +10,7 @@ The program let's you customize your keyboard with an easy and intuitive interfa
 
 ## First use
 
-- Download and install the latest version of the program or use the web version
+- Download and install the [latest version of the program](https://ergohaven.xyz/vial_en) or use the web version
 - Connect your keyboard and it will be automatically detected
 - Unlock the keyboard by clicking on the **Security** menu and then **Unlock**, and follow the instructions that will be displayed on the screen
 - Change any key you want and it will be instantly remapped, customize various options to your liking
