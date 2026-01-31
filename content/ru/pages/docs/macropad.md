@@ -7,8 +7,6 @@ tags: ["docs", "macropad"]
 
 **M4CR0pad** - проводной программируемый механический макропад с энкодером и хотсвап-системой для быстрой замены MX-совместимых свитчей
 
->Начиная с **v3** макропад имеет встроенное магнитное кольцо для крепления к [Универсальной Системе Наклона (УСН)](https://ru.ergohaven.xyz/shop/tproduct/767494027-131631361022-universalnaya-sistema-naklona-predzakaz)
-
 ## Устройство макропада
 <details>
   <summary>M4CR0pad v3</summary>
@@ -20,9 +18,8 @@ tags: ["docs", "macropad"]
 3. силиконовые ножки
 4. вспомогательное окно для разбора корпуса макропада
 5. USB-C разъем
-6. встроенное кольцо MagSafe для [УСН](https://ru.ergohaven.xyz/shop/tproduct/767494027-131631361022-universalnaya-sistema-naklona-predzakaz)
-7. 240*280 IPS дисплей
-8. энкодер
+6. 240*280 IPS дисплей
+7. энкодер
 </details>
 
 <details>
